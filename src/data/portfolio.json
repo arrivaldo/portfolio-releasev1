@@ -1,0 +1,33 @@
+{
+    "portfolio": [
+        {
+            "cover": "/images/nedelka.png",
+            "title": "Real New York Artist Website",
+            "description": "This is a real artist website made for showcasing Nedelka's musical and acting projects as she ventures into her artist projects",
+            "description2": "This is a real artist website made for showcasing Nedelka's musical and acting projects as she ventures into her artist projects",
+            "items": ["React", "JSX", "Tailwind", "Jest"],
+            "url": "http://google.com"
+        },
+        
+       
+        {
+            "cover": "/images/astro-portfolio.png",
+            "title": "VS Code Lunar Extension",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
+            "description2": "This is a real artist website made for showcasing Nedelka's musical and acting projects as she ventures into her artist projects",
+            "items": ["React", "JSX", "Tailwind", "Jest"],
+            "url": "http://google.com"
+        },
+     
+        {
+            "cover": "https://cdn.dribbble.com/userupload/11047215/file/original-0fcb53ef1a6000c5766118565fca7413.png?resize=752x",
+            "title": "Full Stack MERN Application",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elitianiti. Saepe deserunt ipsum rerum.",
+            "description2": "This is a real artist website made for showcasing Nedelka's musical and acting projects as she ventures into her artist projects",       
+            "items": ["React", "JSX", "Tailwind", "Jest"],
+            "url": "http://google.com"
+        }
+     
+     
+    ]
+}

@@ -1,0 +1,391 @@
+.certification-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 15px;
+    padding: 5% 10%;
+}
+
+.certification-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #dbe0e409;
+    border: 0.5px solid #373839;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************/
+.gradient-text-animation {
+	--colorA: #D6009A;
+	--colorB: #9750dd;
+	cursor: default;
+	position: relative;
+	background-image: linear-gradient(120deg, var(--colorA) 0%, var(--colorB) 50%, var(--colorA) 100%);
+	background-origin: padding-box;
+	background-size: 200%;
+	-webkit-box-decoration-break: clone;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: unset;
+	animation-timeline: auto;
+	animation-range-start: normal;
+	animation-range-end: normal;
+	overflow: visible;
+	animation: 3s linear 0s infinite normal forwards running nextui-k-dAFEPd;
+}
+@keyframes nextui-k-dAFEPd {
+	100% {
+		background-position: -200% center
+	}
+}
+
+/******************************/
+
+.gradient-border-card {
+	position: relative;
+	padding: 40px;
+	border-radius: var(--border-radius);
+	flex: 1 1;
+	transition: background .2s ease-in-out,box-shadow .2s ease-in-out;
+	box-shadow: 0 0 0 1px transparent, 0 2px 4px transparent, 0 12px 24px transparent;
+	cursor: pointer;
+	height: 100%;
+	z-index: 1;
+	@keyframes shimmer {
+		0% {
+			opacity: 0
+		}
+
+		5% {
+			opacity: 0;
+			background-position: -50%
+		}
+
+		10% {
+			opacity: .7
+		}
+
+		15% {
+			opacity: 0;
+			background-position: 150%
+		}
+
+		20% {
+			opacity: 0
+		}
+
+		to {
+			opacity: 0
+		}
+	}
+	.shimmer {
+		background: linear-gradient(112deg,transparent 30%,rgba(var(--geist-foreground-rgb),.1) 40%,rgba(var(--geist-foreground-rgb),.3) 50%,rgba(var(--geist-foreground-rgb),.1) 60%,transparent 80%);
+		position: absolute;
+		inset: 0;
+		z-index: 20;
+		pointer-events: none;
+		border-radius: inherit;
+		background-size: 200% auto;
+		background-position: 0;
+		animation: shimmer 18s cubic-bezier(.8,0,.05,1) infinite;
+		animation-delay: var(--delay);
+	}
+	
+	
+	
+	
+	&:before, .icon:before {
+		content: "";
+		position: absolute;
+		inset: -1px;
+		border-radius: inherit;
+		padding: 1px;
+		background: radial-gradient(75% 75% at 25% 15%,#fff 0,hsla(0,0%,100%,.3) 100%);
+		-webkit-mask: linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);
+		mask: linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		opacity: .5;
+		pointer-events: none;
+	}
+	&:hover {
+		background: var(--accent-color);
+		box-shadow: 0 0 0 1px rgba(0,0,0,.03), 0 2px 4px rgba(0,0,0,.05), 0 12px 24px rgba(0,0,0,.05);
+	}
+}
+
+
+
+
+/* Gradient Animation Button
+/******************************/
+
+
+.highlight-bg {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	background: inherit;
+	border-radius: 12px;
+	background: linear-gradient(-90deg, #007cf0, #00dfd8, #ff0080, #007cf0);
+	background-size: 400% 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	animation: background-anim 8s ease-in-out infinite;
+}
+
+.button-text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.highlight-bg:after {
+	content: "";
+	position: absolute;
+	background-size: inherit;
+	background-image: inherit;
+	animation: inherit;
+	left: 0;
+	right: 0;
+	top: 2px;
+	height: 100%;
+	filter: blur(.5rem);
+	transition: 0.25s;
+}
+
+@keyframes background-anim {
+	50% {
+		background-position: 140% 50%;
+		transform: skew(-2deg);
+	}
+}
+
+/*****************/
+
+.gradient-background__wrapper {
+	background: #141414;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media (max-width: 568px) {
+	.gradient-background__wrapper {
+		background: #FFFFFF
+	}
+}
+
+.gradient-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-filter: blur(250px);
+	filter: blur(250px);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
+}
+
+@media (max-width: 568px) {
+	.gradient-background {
+		display: none
+	}
+}
+
+.gradient-background__shape {
+	mix-blend-mode: lighten;
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+	position: absolute;
+	border-radius: 100%;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
+	animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1)
+}
+
+.gradient-background__shape--1 {
+	bottom: 0;
+	left: 0;
+	width: 700px;
+	height: 700px;
+	background: #4f4f4f;
+	mix-blend-mode: lighten;
+	-webkit-transform: translate(-30%, 40%);
+	transform: translate(-30%, 40%);
+	-webkit-animation-name: gradientShapeAnimation1;
+	animation-name: gradientShapeAnimation1
+}
+
+.gradient-background__shape--2 {
+	top: 0;
+	right: 0;
+	width: 600px;
+	height: 600px;
+	background: #010030;
+	-webkit-transform: translate(20%, -40%);
+	transform: translate(20%, -40%);
+	-webkit-animation-name: gradientShapeAnimation2;
+	animation-name: gradientShapeAnimation2
+}
+
+
+@keyframes gradientShapeAnimation1 {
+	0% {
+		-webkit-transform: translate(-30%, 40%) rotate(-20deg);
+		transform: translate(-30%, 40%) rotate(-20deg)
+	}
+
+	25% {
+		-webkit-transform: translate(0%, 20%) skew(-15deg, -15deg) rotate(80deg);
+		transform: translate(0%, 20%) skew(-15deg, -15deg) rotate(80deg)
+	}
+
+	50% {
+		-webkit-transform: translate(30%, -10%) rotate(180deg);
+		transform: translate(30%, -10%) rotate(180deg)
+	}
+
+	75% {
+		-webkit-transform: translate(-30%, 40%) skew(15deg, 15deg) rotate(240deg);
+		transform: translate(-30%, 40%) skew(15deg, 15deg) rotate(240deg)
+	}
+
+	100% {
+		-webkit-transform: translate(-30%, 40%) rotate(-20deg);
+		transform: translate(-30%, 40%) rotate(-20deg)
+	}
+}
+
+@keyframes gradientShapeAnimation2 {
+	0% {
+		-webkit-transform: translate(20%, -40%) rotate(-20deg);
+		transform: translate(20%, -40%) rotate(-20deg)
+	}
+
+	20% {
+		-webkit-transform: translate(0%, 0%) skew(-15deg, -15deg) rotate(80deg);
+		transform: translate(0%, 0%) skew(-15deg, -15deg) rotate(80deg)
+	}
+
+	40% {
+		-webkit-transform: translate(-40%, 50%) rotate(180deg);
+		transform: translate(-40%, 50%) rotate(180deg)
+	}
+
+	60% {
+		-webkit-transform: translate(-20%, -20%) skew(15deg, 15deg) rotate(80deg);
+		transform: translate(-20%, -20%) skew(15deg, 15deg) rotate(80deg)
+	}
+
+	80% {
+		-webkit-transform: translate(10%, -30%) rotate(180deg);
+		transform: translate(10%, -30%) rotate(180deg)
+	}
+
+	100% {
+		-webkit-transform: translate(20%, -40%) rotate(340deg);
+		transform: translate(20%, -40%) rotate(340deg)
+	}
+}
+
+.gradient-background__noise {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://res.cloudinary.com/du6mfjbbd/image/upload/v1701127786/qzt2rn0jkkdln3y1e3mp.png");
+	background-size: 100px
+}
+
+@media (max-width: 568px) {
+	.gradient-background__noise {
+		display: none
+	}
+}
+
+@media (prefers-reduced-motion) {
+	.gradient-background__shape--1 {
+		-webkit-animation-name: none;
+		animation-name: none
+	}
+
+	.gradient-background__shape--2 {
+		-webkit-animation-name: none;
+		animation-name: none
+	}
+}
+
+@-moz-document url-prefix() {
+	.gradient-background__wrapper {
+		background-image: url("https://res.cloudinary.com/du6mfjbbd/image/upload/v1701127843/gradient-background-c1d8cb3f0925910cfff2493c4442d4e2c1cb6b8a267903342574faee6f70c26c_zuhomc.png");
+		background-size: cover
+	}
+
+	@media (max-width: 568px) {
+		.gradient-background__wrapper {
+			background: #FFFFFF
+		}
+	}
+
+	.gradient-background,
+	.gradient-background__noise {
+		display: none
+	}
+}
+
+@media all and (-ms-high-contrast: none),
+	(-ms-high-contrast: active) {
+		.gradient-background__wrapper {
+			background-image: url("https://res.cloudinary.com/du6mfjbbd/image/upload/v1701127843/gradient-background-c1d8cb3f0925910cfff2493c4442d4e2c1cb6b8a267903342574faee6f70c26c_zuhomc.png");
+			background-size: cover
+		}
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: 568px),
+	(-ms-high-contrast: active) and (max-width: 568px) {
+		.gradient-background__wrapper {
+			background: #FFFFFF
+		}
+}
+
+@media all and (-ms-high-contrast: none),
+	(-ms-high-contrast: active) {
+
+		.gradient-background,
+		.gradient-background__noise {
+			display: none
+		}
+}

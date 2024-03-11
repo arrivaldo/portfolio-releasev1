@@ -1,0 +1,42 @@
+/* .servicesCartas {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "firstCard secondCard thirdCard"
+      "firstCard fourthCard fifthCard";
+      .servicesCartas {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 30px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "firstCard secondCard thirdCard"
+          "firstCard fourthCard fifthCard";
+      
+      }
+      
+      .firstCard { grid-area: firstCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%; border-radius: 25px; }
+      
+      .secondCard { grid-area: secondCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;  border-radius: 25px;}
+      
+      .thirdCard { grid-area: thirdCard;border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;  border-radius: 25px;}
+      
+      .fourthCard { grid-area: fourthCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;  border-radius: 25px;}
+      
+      .fifthCard { grid-area: fifthCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;  border-radius: 25px;}
+  }
+  
+  .firstCard { grid-area: firstCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%; }
+  
+  .secondCard { grid-area: secondCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;}
+  
+  .thirdCard { grid-area: thirdCard;border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;}
+  
+  .fourthCard { grid-area: fourthCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;}
+  
+  .fifthCard { grid-area: fifthCard; border: 1px solid rgba(146, 163, 198, 0.4509803922); background: #1e2636; padding: 5%;}
+   */
