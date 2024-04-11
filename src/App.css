@@ -1,10 +1,13 @@
-.container {
-    width: 80%;
-    min-width: 320px; /* Minimum width */
-    max-width: 1900px; /* Maximum width */
+.cont {
+    width: 100%;
+   
     margin: auto;
     display: flex;
     flex-direction: column;
+    /* overflow-y: scroll; */
+    /* border: 1px solid #c1c1c194;   */
+    border: 1px solid #c1c1c138;  
+    max-width: 1024px;
   }
   
   .content {
@@ -12,3 +15,7 @@
     /* padding: 20px; */
     /* background: #0c1ad8; */
   }
+
+  .gradient-bg {
+    background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(3, 0, 215, 0.3), #000);
+}

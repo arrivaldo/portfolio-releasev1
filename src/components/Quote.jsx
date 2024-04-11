@@ -35,12 +35,12 @@ const Quote = () => {
             width: "100%",
             display: "flex",
             justifyContent: "center",
-            marginTop: "7%",
+            marginTop: "5%",
           }}
         >
           <h3 className="text-2xl" style={{ width: "47%", textAlign: "center" }}>
             Resend is transforming email for developers. Simple interface, easy
-            integrations, handy templates. What else could we ask for.
+            integrations et.
           </h3>
         </div>
       </div>

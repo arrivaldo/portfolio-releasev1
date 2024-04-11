@@ -68,7 +68,7 @@
     font-family: system-ui;
     /* font-size: 1.125rem; */
     /* margin-left: 15%; */
-    margin-top: 1.3%;
+    /* margin-top: 1.3%; */
   }
   
   .tag-list {
@@ -78,9 +78,10 @@
   }
   
   .tag-list li {
-    padding: 2rem;
-    border-radius: 0.5rem;
+    padding: 1rem;
+    /* border-radius: 0.5rem; */
     box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+    border: 1px solid #c1c1c194;
   }
   
   /* for testing purposed to ensure the animation lined up correctly */

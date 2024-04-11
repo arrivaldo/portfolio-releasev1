@@ -1,0 +1,64 @@
+.layer {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.1fr 0.9fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "upper1"
+      "bottom1";
+  }
+  
+  .upper1 {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "upper-cont upper-cont2";
+    grid-area: upper1;
+  }
+  
+  .upper-cont {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "upper11"
+      "upper21";
+    grid-area: upper-cont;
+  }
+  
+  .upper11 { grid-area: upper11;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; }
+  
+  .upper21 { grid-area: upper21;  border: 1px solid #c1c1c159; border-radius: 1rem;  }
+  
+  .upper-cont2 {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "upper12"
+      "upper22";
+    grid-area: upper-cont2;
+  }
+  
+  .upper12 { grid-area: upper12;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; }
+  
+  .upper22 { grid-area: upper22;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem;}
+  
+  .bottom1 {
+    display: grid; 
+    grid-template-columns: 1.5fr 0.5fr; 
+    grid-template-rows: 1fr; 
+    gap: 25px 25px; 
+    grid-template-areas: 
+      "low1 low2"; 
+    grid-area: bottom1; 
+ 
+  }
+  .low1 { grid-area: low1;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; }
+  .low2 { grid-area: low2; padding: 5%; border-radius: 1rem;    }

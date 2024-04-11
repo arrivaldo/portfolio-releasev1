@@ -1,4 +1,4 @@
-.certification-list {
+/* .certification-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 30px;
@@ -20,16 +20,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-/******************************/
 .gradient-text-animation {
 	--colorA: #D6009A;
 	--colorB: #9750dd;
@@ -55,7 +45,6 @@
 	}
 }
 
-/******************************/
 
 .gradient-border-card {
 	position: relative;
@@ -133,8 +122,6 @@
 
 
 
-/* Gradient Animation Button
-/******************************/
 
 
 .highlight-bg {
@@ -185,8 +172,6 @@
 		transform: skew(-2deg);
 	}
 }
-
-/*****************/
 
 .gradient-background__wrapper {
 	background: #141414;
@@ -388,4 +373,4 @@
 		.gradient-background__noise {
 			display: none
 		}
-}
+} */

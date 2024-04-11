@@ -1,0 +1,32 @@
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: "service-box1 service-box2 service-box3 service-box4";
+}
+
+.service-box1 {
+  grid-area: service-box1;
+  border: 1px solid #c1c1c194;
+  padding: 5%;
+}
+
+.service-box2 {
+  grid-area: service-box2;
+  border: 1px solid #c1c1c194;
+  padding: 5%;
+}
+
+.service-box3 {
+  grid-area: service-box3;
+  border: 1px solid #c1c1c194;
+  padding: 5%;
+}
+
+.service-box4 {
+  grid-area: service-box4;
+  border: 1px solid #c1c1c194;
+  padding: 5%;
+}

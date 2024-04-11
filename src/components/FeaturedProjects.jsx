@@ -111,6 +111,7 @@ const FeaturedProjects = () => {
              // marginTop: "37%",
             }}
           >
+            
             <div
             // style={{ marginLeft: "-6%" }}
             >
@@ -122,6 +123,8 @@ const FeaturedProjects = () => {
           </div>
           {/* Render the projects */}
           {projects}
+
+         
       </div>
     </>
   );
