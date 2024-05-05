@@ -14,7 +14,7 @@ const Skills = () => {
         vitae.
       </p>
       <div>
-        <section  id="stack" className="stack fade-in">
+        <section id="stack" className="stack fade-in">
           <div className="stack-container">
             <div className="tech-container">
               <svg viewBox="0 0 128 128">

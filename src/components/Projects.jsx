@@ -154,10 +154,10 @@ const Proyects = () => {
 
     <div
     key={index}
-    style={{ padding: "2px",     border: '1px solid #c1c1c194' }}
+    style={{     border: '1px solid #c1c1c194' }}
     className="relative h-full bg-gray-800 rounded-xl before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-gray-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden"
   >
-    <div className="relative h-full bg-gray-900 p-6 pb-8 rounded-[inherit] z-20 overflow-hidden">
+    <div className="relative h-full bg-gray-900 p-3 rounded-[inherit] z-20 overflow-hidden">
       <div
         className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
         aria-hidden="true"
@@ -169,16 +169,16 @@ const Proyects = () => {
     <div  className="project1">
       <div className="flex justify-between w-full">
         <div className="flex flex-col w-full flex-1 ">
-          <h2 className="text-2xl mt-3 font-semibold mb-5">{project.title}</h2>
+          {/* <h2 className="text-xl mt-3 font-semibold mb-5">{project.title}</h2> */}
 
-          <ul
+          {/* <ul
             style={{
               display: "flex",
               alignItems: "center",
               marginBottom: "5%",
               gap: "2%",
             }}
-            className="project-items text-xl"
+            className="project-items text-md"
           >
             {project.items.map((item, itemIndex) => (
               <li
@@ -191,12 +191,11 @@ const Proyects = () => {
                   padding: "1% 5%",
                 }}
               >
-                {/* Render icon and style dynamically based on technology */}
                 <div style={item.style}>{item.icon}</div>
                 <span>{item.name}</span>
               </li>
             ))}
-          </ul>
+          </ul> */}
           <div className="flex  justify-center items-center w-full h-52 ">
             <img
               style={{}}
@@ -204,20 +203,48 @@ const Proyects = () => {
               src={project.cover}
             ></img>
           </div>
+                    {/* <h2 className="text-lg mt-3 font-semibold mb-5">{project.title}</h2> */}
 
-          <div className="project-text">
-            {/* <p
-                  className="text-2xl"
+
+          {/* <ul
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "5%",
+              gap: "2%",
+            }}
+            className="project-items text-md"
+          >
+            {project.items.map((item, itemIndex) => (
+              <li
+                key={itemIndex}
+                className="flex items-center gap-2"
+                style={{
+                  marginRight: "10px",
+                  border: "1px solid #c1c1c194",
+                  borderRadius: "1rem",
+                  padding: "1% 5%",
+                }}
+              >
+                <div style={item.style}>{item.icon}</div>
+                <span>{item.name}</span>
+              </li>
+            ))}
+          </ul> */}
+
+          {/* <div className="project-text">
+            <p
+                  className="text-md"
                   style={{
                     fontWeight: "400",
                     color: "#b7bfd0",
                   }}
                 >
                   {project.description2}
-                </p> */}
+                </p>
             <br />
             <p
-              className="text-2xl"
+              className="text-md"
               style={{
                 // marginTop: "2%",
                 fontWeight: "400",
@@ -238,17 +265,17 @@ const Proyects = () => {
               }}
             >
               <button
-                className="flex items-center gap-2 text-2xl"
+                className="flex items-center gap-2 text-lg"
                 onClick={() => {
                   setSelectedProject(port);
                   setIsModalOpen(true);
                 }}
               >
                 <IoIosLink />
-                View Project
+                View
               </button>
               <button
-                className="flex items-center gap-2 text-2xl"
+                className="flex items-center gap-2 text-lg"
                 onClick={() => {
                   setSelectedProject(port);
                   setIsModalOpen(true);
@@ -258,7 +285,7 @@ const Proyects = () => {
                 Code
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -269,7 +296,7 @@ const Proyects = () => {
 
   return (
     <>
-      <div style={{ padding: "0 10%", marginTop: "6%" }}>
+      <div style={{ padding: "0 8%", marginTop: "10%" }}>
         <h1
           className="text-2xl"
           style={{

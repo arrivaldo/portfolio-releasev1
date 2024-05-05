@@ -1,16 +1,15 @@
 import React from "react";
+import './Contact.css'
 
 const Contact = () => {
   return (
     <>
+      <section className="p-contact" style={{ marginTop: "5%" }}>
+        <h3 className="text-slate-50 text-2xl font-bold text-left">
+          Let's Collaborate!
+        </h3>
 
-
-
-
-    
-      <section style={{ padding: "7% 10%",     }}>
-
-      <div className="col-lg-4">
+        {/* <div className="col-lg-4">
             <div className="gradient-border-card">
               <button type="submit" className="mt-3">
                 <span>
@@ -20,9 +19,9 @@ const Contact = () => {
               </button>
               <div className="shimmer"></div>
             </div>
-          </div>
+          </div> */}
 
-        <form style={{border: '1px solid #c1c1c194', marginTop: '2%', padding: '2%'}} className=" mx-auto" >
+        <form style={{ marginTop: "2%" }} className=" mx-auto">
           <div className="relative z-0 w-full mb-5 group">
             <input
               type="email"
@@ -140,12 +139,29 @@ const Contact = () => {
               </label>
             </div>
           </div>
-          <button
-            type="submit"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Submit
-          </button>
+
+          
+  {/* <label for="message" className="block mb-2 text-sm font-medium text-white">Your message</label> */}
+  <textarea style={{border: '2px solid rgb(209 213 219', marginBottom: '2%'}} id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900  rounded-lg border focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+
+
+
+          <div className="group">
+            <button
+              style={{
+                background: "rgb(8, 8, 47)",
+                border: "1px solid rgba(193, 193, 193, 0.58)",
+              }}
+              type="submit"
+              className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center"
+            >
+              Submit
+            </button>
+            <button
+              style={{ bottom: "-10px", height: "12px" }}
+              className="absolute left-0  w-full p-0 linearGrad   hoverGrad"
+            ></button>
+          </div>
         </form>
       </section>
     </>

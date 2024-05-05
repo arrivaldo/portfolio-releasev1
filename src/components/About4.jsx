@@ -5,6 +5,8 @@ import Profile from "./Profile";
 import Jobs from "./Jobs";
 import Stack from "./Stack";
 import CountUpStats from "./CountUpStats";
+import Tabs from "./Tabs";
+
 
 const About4 = () => {
   const spotlightRef = useRef(null);
@@ -33,39 +35,50 @@ const About4 = () => {
 
   return (
     <>
-      <section style={{ padding: "0 8%", marginTop: "6%" }}>
+      <section style={{ padding: "0 6%", marginTop: "6%" }}>
         <div className="layer">
           <div className="upper1">
-            <div ref={spotlightRef} className="upper-cont">
+            <div
+              // ref={spotlightRef}
+              className="upper-cont"
+            >
               <div className="" style={{ padding: "2px" }}>
                 <div
-                  style={{ }}
-                  className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
+                  style={{}}
+                  className="relative bgColor h-full rounded-[inherit]  overflow-visible"
                 >
-                  <div className="upper11">
+                  <div className="group upper11">
                     <Profile />
+                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
+
                   </div>
+                  
                 </div>
               </div>
 
               <div className="" style={{ padding: "2px" }}>
                 <div
-                  style={{ }}
-                  className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
+                  style={{}}
+                  className="relative bgColor h-full rounded-[inherit]  overflow-visible"
                 >
-                  <div className="upper21">
+                  <div className="group upper21">
                     <Jobs />
+                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
+
                   </div>
                 </div>
               </div>
             </div>
-            <div ref={spotlightRef2} className="upper-cont2">
+            <div
+              // ref={spotlightRef2}
+              className="upper-cont2"
+            >
               <div className="" style={{ padding: "2px" }}>
                 <div
-                  style={{ }}
-                  className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
+                  style={{}}
+                  className="relative h-full  bgColor  rounded-[inherit]  overflow-visible"
                 >
-                  <div className="upper12">
+                  <div className="group upper12">
                     <div className="flex flex-col">
                       <h3 className="text-lg">April 5, 2024</h3>
                       <h2 className="text-xl font-bold py-2">
@@ -82,16 +95,19 @@ const About4 = () => {
                       </p>
                       <a className="text-lg text-[#84cdeb]">Read article -</a>
                     </div>
+
+                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
+
                   </div>
                 </div>
               </div>
 
               <div className="" style={{ padding: "2px" }}>
                 <div
-                  style={{ }}
-                  className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
+                  style={{}}
+                  className="relative h-full  bgColor rounded-[inherit]  overflow-vsible"
                 >
-                  <div className="upper22">
+                  <div className="group upper22">
                     <div className="flex flex-col">
                       <h3 className="text-lg">April 5, 2024</h3>
                       <h2 className="text-xl font-bold py-2">
@@ -108,32 +124,43 @@ const About4 = () => {
                       </p>
                       <a className="text-lg text-[#84cdeb]">Read article -</a>
                     </div>
+                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div >
-            <div ref={spotlightRef3} className="bottom1">
+          <div>
+            <div
+              // ref={spotlightRef3}
+              className="bottom1"
+            >
               <div className="" style={{ padding: "2px" }}>
                 <div
-                  style={{ }}
-                  className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
+                  style={{}}
+                  className="relative h-full  bgColor rounded-[inherit]  overflow-visible"
                 >
-                  <div className="low1">
-                    <Stack />
+                  <div className="group low1">
+                    {/* <Stack /> */}
+                    <Tabs />
                   </div>
                 </div>
               </div>
 
               <div className="" style={{ padding: "2px" }}>
                 <div
-                  style={{  border: '1px solid #c1c1c159', borderRadius: '1rem' }}
-                  className="flex justify-center items-center relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
+                  style={{
+                    border: "1px solid #c1c1c159",
+                    borderRadius: "1rem",
+                  }}
+                  className="flex justify-center items-center relative h-full  bgColor rounded-[inherit]  overflow-visible"
                 >
-                  <div className="low2">
+                  <div className="group low2">
                     <CountUpStats />
+                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
+
                   </div>
                 </div>
               </div>

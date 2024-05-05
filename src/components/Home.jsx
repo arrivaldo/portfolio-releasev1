@@ -19,21 +19,18 @@ const Home = () => {
   return (
     <>
       <div
-        style={{
-          padding: "0% 8%",
-          display: "flex",
-          width: "100%",
-          justifyContent: "space-between",
-          marginTop: "2%",
-        }}
+      //   style={{
+      //     padding: "0% 6%",
+      //     marginTop: "2%",
+      //  }}
+        className="padding-home flex w-full justify-between items-center p[0% 6%]"
       >
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            width: "57%",
-            justifyContent: "center",
+     
+          width: "56%",
           }}
+          className="flex flex-col justify-center "
         >
           <h3 className="text-xl" style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
@@ -43,7 +40,9 @@ const Home = () => {
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
-            <span className="" style={{}}>Quality Engineer</span>
+            <span className="" style={{}}>
+              Quality Engineer
+            </span>
           </h2>
 
           <p
@@ -74,17 +73,10 @@ const Home = () => {
               quality products.&nbsp;
             </span>
           </p>
-        </div>
-        <img
-          style={{ objectFit: "cover", width: "35%" }}
-          src="/images/wolf.webp"
-        ></img>
-        {/* <video autoPlay loop style={{top: '-12%', left: '0', padding: '0 20%', zIndex: '-1', scale: '1.2'}} className="absolute" src="/hologram5.mp4"></video> */}
-      </div>
-
+          
       <div
         ref={spotlightRef}
-        style={{ padding: "0 8%", display: "flex", gap: "2%" }}
+        style={{ display: "flex", gap: "2%", marginTop: '5%' }}
       >
         <div
           style={{ padding: "2px" }}
@@ -95,7 +87,7 @@ const Home = () => {
               style={{
                 background: "rgb(11 13 57)",
                 border: "1px solid #c1c1c194",
-                borderRadius: '5px'
+                borderRadius: "5px",
               }}
               type="button"
               className="text-md flex items-center gap-2 p-1 px-4 "
@@ -108,15 +100,13 @@ const Home = () => {
 
         <div
           style={{ padding: "2px" }}
-          // className="relative h-full bg-gray-800 rounded-xl before:absolute before:w-80 before:h-80 before:-left-40 before:-top-40 before:bg-gray-400 before:rounded-full before:opacity-0 before:pointer-events-none before:transition-opacity before:duration-500 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:group-hover:opacity-100 before:z-10 before:blur-[100px] after:absolute after:w-96 after:h-96 after:-left-48 after:-top-48 after:bg-indigo-500 after:rounded-full after:opacity-0 after:pointer-events-none after:transition-opacity after:duration-500 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:hover:opacity-10 after:z-30 after:blur-[100px] overflow-hidden"
         >
           <div className="relative h-full bg-gray-900 rounded-[inherit] z-0 overflow-hidden">
             <button
               style={{
                 background: "rgb(11 13 57)",
                 border: "1px solid #c1c1c194",
-                borderRadius: '5px'
-
+                borderRadius: "5px",
               }}
               type="button"
               className="text-md flex items-center gap-2 p-1  px-4"
@@ -136,8 +126,7 @@ const Home = () => {
               style={{
                 background: "rgb(11 13 57)",
                 border: "1px solid #c1c1c194",
-                borderRadius: '5px'
-
+                borderRadius: "5px",
               }}
               type="button"
               className="text-md flex items-center gap-2 p-1  px-4"
@@ -148,23 +137,34 @@ const Home = () => {
           </div>
         </div>
       </div>
+        </div>
+        <img
+          style={{ objectFit: "cover", width: "35%" }}
+          src="/images/wolf.webp"
+        ></img>
+        {/* <video autoPlay loop style={{top: '0%', left: '0', padding: '0 27.5%', zIndex: '0', scale: '1.2'}} className="absolute" src="/astro1.mp4"></video> */}
+      </div>
+
 
       <div
         style={{
           width: "100%",
           // marginTop: "6%",
-          padding: "5% 8%",
+          
         }}
       >
         {/* <h6>Some information</h6> */}
 
-        <div>
+        <div className="p-midHome">
           <h2
             className="text-xl"
             style={{ fontWeight: "600", marginBottom: "4%" }}
           >
-            We're a Design Studio based in Querétaro, México, offering
-            full-stack development
+            {/* We're a Design Studio based in Querétaro, México, offering
+            full-stack development */}
+            {/* I'm a mechatronic engineer based in Querétaro, México, offering full-stack development. */}
+            I run a software engineering studio based in México, offering
+            full-stack development.
           </h2>
           <div className="flex gap-24">
             {/* <img className="w-50 h-60" src="/images/erick3.png"></img> */}
@@ -172,14 +172,19 @@ const Home = () => {
               <p
                 className="text-xl leading-normal"
                 style={{
-                  // fontSize: "1.2rem",
                   filter: "brightness(1.3)",
                   color: "#8d93a0",
                 }}
               >
-                The world of software engineering and development is constantly
-                evolving and so has my role over the 
-                last 5 years, by collaborating in impactul projects across the globe.
+                The world of development and software engineering is constantly
+                <span style={{ color: "#e3e3e3" }}> evolving&nbsp;</span>
+                and so has my
+                <span style={{ color: "#e3e3e3" }}>
+                  {" "}
+                  role over the last 5 years&nbsp;
+                </span>
+                {/* <span style={{ color: "#e3e3e3" }}> 5 years&nbsp;</span> */}
+                by collaborating in impactul projects across the globe.
                 {/* Lorem at sum teiko rumba from sur not attem from my top structure main. */}
                 {/* <span style={{ color: "#e3e3e3" }}> praesentium</span>, voluptatum
             rerum fuga minus
@@ -208,9 +213,14 @@ const Home = () => {
                 {/* I have participated in impactul projects as a developér, QA and
                 Business Architect by some the colloborating with clients, fellow
                 engineers and business. */}
-                I've helped international clients as a web developer, quality analyst by performing manual testing and as business architect by ensuring a devops CI/CD integration.
+                During my career I've helped international clients fulfill their
+                projects during the entire life cycle by collaborating as
+                a&nbsp;
+                <span style={{ color: "#e3e3e3" }}>web developer,&nbsp;</span>
+                <span style={{ color: "#e3e3e3" }}>quality analyst&nbsp;</span>
+                and&nbsp;
                 {/* corporis optio, consectetur asperiores repellendus maxime quo, */}
-                ipsam <span style={{ color: "#e3e3e3" }}>non minima </span>
+                <span style={{ color: "#e3e3e3" }}>business architect</span>
                 {/* from any form of arquitecture. */}
               </p>
             </div>

@@ -1,0 +1,92 @@
+.container-tabs {
+    position: relative;
+
+    width: 500px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    width: max-content;
+  }
+  
+  .tab {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    transition: all 0.25s ease;
+    border-left: 2px solid #5f6368;
+    color: #5f6368;
+  }
+  
+  .tab:hover {
+    color: #fff; /* Replace $purple with your desired hover color */
+  }
+  
+  .tab.active {
+    color: #fff;
+  }
+  
+  .tab-1.active ~ .highlighter {
+    transform: translateY(0);
+  }
+  
+  .tab-2.active ~ .highlighter {
+    transform: translateY(33px); /* Replace 33px with your desired tab height */
+  }
+  
+  .tab-3.active ~ .highlighter {
+    transform: translateY(66px); /* Replace 66px with twice the tab height or your desired value */
+  }
+  
+  .highlighter {
+    display: block;
+    background: #fff; /* Replace $purple with your desired highlighter color */
+    width: 2px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: transform 0.2s ease;
+    transition-delay: 0.1s;
+    z-index: 10;
+  }
+  
+  a:first-of-type {
+    border-top-left-radius: 2px;
+  }
+  
+  a:last-of-type {
+    border-top-right-radius: 2px;
+  }
+  
+  .content-tabs {
+    position: relative;
+    padding: 0 40px; /* Define $spacing as per your requirement */
+  }
+  
+  .content__section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0s ease;
+  }
+  
+  .content__section.visible {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+  }
+  

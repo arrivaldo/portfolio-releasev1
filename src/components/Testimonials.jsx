@@ -1,279 +1,234 @@
-import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { ImQuotesLeft } from "react-icons/im";
 
-const CARD_SIZE_LG = 365;
-const CARD_SIZE_SM = 290;
+const Testimonials = () => {
+  const [position, setPosition] = useState(0);
 
-const BORDER_SIZE = 2;
-const CORNER_CLIP = 50;
-const CORNER_LINE_LEN = Math.sqrt(
-  CORNER_CLIP * CORNER_CLIP + CORNER_CLIP * CORNER_CLIP
-);
-
-const ROTATE_DEG = 2.5;
-
-const STAGGER = 15;
-const CENTER_STAGGER = -65;
-
-const SECTION_HEIGHT = 600;
-
-const StaggerTestimonials = () => {
-  const [cardSize, setCardSize] = useState(CARD_SIZE_LG);
-
-  const [testimonials, setTestimonials] = useState(TESTIMONIAL_DATA);
-
-  const handleMove = (position) => {
-    const copy = [...testimonials];
-
+  const shiftLeft = () => {
     if (position > 0) {
-      for (let i = position; i > 0; i--) {
-        const firstEl = copy.shift();
-
-        if (!firstEl) return;
-
-        copy.push({ ...firstEl, tempId: Math.random() });
-      }
-    } else {
-      for (let i = position; i < 0; i++) {
-        const lastEl = copy.pop();
-
-        if (!lastEl) return;
-
-        copy.unshift({ ...lastEl, tempId: Math.random() });
-      }
+      setPosition((pv) => pv - 1);
     }
-
-    setTestimonials(copy);
   };
 
-  useEffect(() => {
-    const { matches } = window.matchMedia("(min-width: 640px)");
-
-    if (matches) {
-      setCardSize(CARD_SIZE_LG);
-    } else {
-      setCardSize(CARD_SIZE_SM);
+  const shiftRight = () => {
+    if (position < features.length - 1) {
+      setPosition((pv) => pv + 1);
     }
+  };
 
-    const handleSetCardSize = () => {
-      const { matches } = window.matchMedia("(min-width: 640px)");
-
-      if (matches) {
-        setCardSize(CARD_SIZE_LG);
-      } else {
-        setCardSize(CARD_SIZE_SM);
-      }
-    };
-
-    window.addEventListener("resize", handleSetCardSize);
-
-    return () => window.removeEventListener("resize", handleSetCardSize);
-  }, []);
+  const [imgIndex, setImgIndex] = useState(0);
 
   return (
-    <section>
-
-      <div style={{padding: '0 10%', fontWeight: '600', marginTop: '6%'}}>
-         <h1 className="text-2xl">Testimonials</h1>
-
-      </div>
-
-    <div
-      className="relative  overflow-hidden "
-      style={{
-        height: SECTION_HEIGHT, padding: '0 10%', marginLeft: '10%', width: '80%'
-      }}
+    <section
+      style={{ padding: "0 8%", marginTop: "10%" }}
+      className="overflow-hidden"
     >
-      {testimonials.map((t, idx) => {
-        let position = 0;
+      <div className="">
+        <div className="mb-8 flex items-center justify-center gap-4">
+          {/* <h2 className="text-xl font-bold leading-[1.2] md:text-xl">
+            We're good. <span className="text-neutral-400">Here's why.</span>
+          </h2> */}
+          <h2 className="text-2xl font-bold">Testimonials</h2>
+          {/* <p>What clients say about me.</p> */}
+          {/* <div className="flex gap-2 overflow-hidden ">
+            <button
+              className="h-fit p-4 text-2xl text-white transition-colors hover:bg-neutral-700"
+              onClick={shiftLeft}
+            >
+              <FiChevronLeft />
+            </button>
+            <button
+              className="h-fit p-4 text-2xl text-white transition-colors hover:bg-neutral-700"
+              onClick={shiftRight}
+            >
+              <FiChevronRight />
+            </button>
+          </div> */}
+        </div>
+        <div className="flex gap-8 overflow-hidden">
+          {features.map((feat, index) => (
+            <Feature
+              key={feat.id}
+              features={features}
+              position={position}
+              index={index}
+            />
+          ))}
+        </div>
 
-        if (testimonials.length % 2) {
-          position = idx - (testimonials.length + 1) / 2;
-        } else {
-          position = idx - testimonials.length / 2;
-        }
+        <div className="flex justify-between overflow-hidden items-center ">
+          <button
+            className="h-fit p-4 text-2xl text-white transition-colors hover:bg-neutral-700"
+            onClick={shiftLeft}
+          >
+            <svg
+              width="60"
+              height="44"
+              viewBox="0 0 147 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M143.685 22.0708L3.05533 22.1051M3.05533 22.1051L22.1929 3.06646M3.05533 22.1051L22.0939 41.2426"
+                stroke="#E3E3E3"
+                strokeWidth="5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
 
-        return (
-          <TestimonialCard
-            key={t.tempId}
-            testimonial={t}
-            handleMove={handleMove}
-            position={position}
-            cardSize={cardSize}
-          />
-        );
-      })}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
-        <button
-          onClick={() => handleMove(-1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
-        >
-          <GoArrowLeft />
-        </button>
-        <button
-          onClick={() => handleMove(1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
-        >
-          <GoArrowRight />
-        </button>
+          <Dots
+          position={position}
+          setPosition={setPosition}
+          totalTestimonials={features.length}
+        />
+
+
+          <button
+            className="h-fit p-4 text-2xl text-white transition-colors hover:bg-neutral-700"
+            onClick={shiftRight}
+          >
+            <svg
+              width="60"
+              height="44"
+              viewBox="0 0 147 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.5 21.9931L143.13 21.9928M143.13 21.9928L123.987 41.0268M143.13 21.9928L124.096 2.8507"
+                stroke="#E3E3E3"
+                strokeWidth="5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+
+          
+        </div>
+
+        
       </div>
-    </div>
-  </section>
-
+    </section>
   );
 };
 
-const TestimonialCard = ({ position, testimonial, handleMove, cardSize }) => {
-  const isActive = position === 0;
+const Feature = ({ position, index, features }) => {
+  const feature = features[index];
+  const translateAmt =
+    position >= index ? index * 100 : index * 100 - 100 * (index - position);
 
   return (
     <motion.div
-      initial={false}
-      onClick={() => handleMove(position)}
-      className={`
-      absolute left-1/2 top-1/2 cursor-pointer border-white p-8 text-white transition-colors duration-500 ${
-        isActive ? "z-10 bg-indigo-600" : "z-0 bg-black"
-      }
-      `}
-      style={{
-        borderWidth: BORDER_SIZE,
-        clipPath: `polygon(${CORNER_CLIP}px 0%, calc(100% - ${CORNER_CLIP}px) 0%, 100% ${CORNER_CLIP}px, 100% 100%, calc(100% - ${CORNER_CLIP}px) 100%, ${CORNER_CLIP}px 100%, 0 100%, 0 0)`,
-      }}
-      animate={{
-        width: cardSize,
-        height: cardSize,
-        x: `calc(-50% + ${position * (cardSize / 1.5)}px)`,
-        y: `calc(-50% + ${
-          isActive ? CENTER_STAGGER : position % 2 ? STAGGER : -STAGGER
-        }px)`,
-        rotate: isActive ? 0 : position % 2 ? ROTATE_DEG : -ROTATE_DEG,
-        boxShadow: isActive ? "0px 8px 0px 4px black" : "0px 0px 0px 0px black",
-      }}
+      style={{ border: "1px solid rgba(255, 255, 255, 0.125)" }}
+      animate={{ x: `${-translateAmt}%` }}
       transition={{
-        type: "spring",
-        mass: 3,
-        stiffness: 400,
-        damping: 50,
+        ease: "easeInOut",
+        duration: 0.35,
       }}
+      className={`relative flex min-h-[250px] max-w-lg shrink-0 flex-col justify-between overflow-hidden  shadow-lg w-[30%]`}
     >
-      <span
-        className="absolute block origin-top-right rotate-45 bg-black object-cover"
-        style={{
-          right: -BORDER_SIZE,
-          top: CORNER_CLIP - BORDER_SIZE,
-          width: CORNER_LINE_LEN,
-          height: BORDER_SIZE,
-        }}
-      />
-      <img
-        src={testimonial.imgSrc}
-        alt={`Testimonial image for ${testimonial.by}`}
-        className="mb-4 h-14 w-12 bg-neutral-600 object-cover object-top"
-        style={{
-          boxShadow: "3px 3px 0px white",
-        }}
-      />
-      <h3
-        className={`text-base sm:text-xl ${
-          isActive ? "text-white" : "text-white"
-        }`}
+      <div
+        key={feature.id}
+        className="shrink-0 flex rounded-lg overflow-hidden relative h-full"
       >
-        "{testimonial.testimonial}"
-      </h3>
-      <p
-        className={`absolute bottom-8 left-8 right-8 mt-2 text-sm italic ${
-          isActive ? "text-indigo-200" : "text-neutral-700"
-        }`}
-      >
-        - {testimonial.by}
-      </p>
+        <div className="flex flex-col justify-between bg-slate-900 text-slate-50 p-4">
+          <div>
+            <div className="flex w-full justify-between items-center">
+              <span style={{}} className="text-7xl text-slate-700">
+                <ImQuotesLeft style={{ width: "70%" }} />
+              </span>
+              <p>2011 Jan 2023</p>
+            </div>
+
+            <span
+              style={{ marginTop: "7%" }}
+              className="block text-lg text-slate-300"
+            >
+              {feature.info}
+            </span>
+          </div>
+
+          <div style={{ marginTop: "12%" }} className="flex items-center gap-3">
+            <div style={{ borderRadius: "50%", width: "12%" }}>
+              <img
+                style={{ borderRadius: "50%" }}
+                src="/images/madhu.jpeg"
+              ></img>
+            </div>
+            <div className="flex flex-col">
+              <span className="block font-semibold text-lg mb-1">
+                {feature.name}
+              </span>
+              <span className="block mb-3 text-sm font-medium">
+                {feature.title}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 };
 
-export default StaggerTestimonials
+const Dots = ({ position, setPosition, totalTestimonials }) => {
+  return (
+    <div className="mt-4 flex w-full justify-center gap-2">
+      {Array.from({ length: totalTestimonials }).map((_, index) => {
+        return (
+          <button
+            key={index}
+            onClick={() => setPosition(index)}
+            className={`h-1 w-3  transition-colors ${
+              position === index ? "bg-neutral-50" : "bg-neutral-500"
+            }`}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
-const TESTIMONIAL_DATA = [
+export default Testimonials;
+
+const features = [
   {
-    tempId: 0,
-    testimonial:
-      "My favorite solution in the market. We work 5x faster with COMPANY.",
-    by: "Alex, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/1.jpg",
+    id: 1,
+    img: "https://images.unsplash.com/photo-1627161683077-e34782c24d81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=703&q=80",
+    name: "Sam Gharnagh",
+    title: "Vice President",
+    info: "Erick helped in QA activities for an upgrade project of the Pega platform with smooth successful result. He took initiative to quickly learn the client application, create test cases and execute them",
   },
   {
-    tempId: 1,
-    testimonial:
-      "I'm confident my data is safe with COMPANY. I can't say that about other providers.",
-    by: "Dan, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/2.jpg",
+    id: 2,
+    img: "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80",
+    name: "Darwin Batres",
+    title: "Lead Developer",
+    info: "Erick has been doing a great job, he got direct exposure to the client and was able to interact with them. The client liked his work and he was able to help them directly whenever they needed it. i.e creating data, providing demos, knowledge transfer.",
   },
   {
-    tempId: 2,
-    testimonial:
-      "I know it's cliche, but we were lost before we found COMPANY. Can't thank you guys enough!",
-    by: "Stephanie, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/3.jpg",
+    id: 3,
+    img: "https://plus.unsplash.com/premium_photo-1670588776139-da93b47afc6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    name: "Madhu Chalamaiah",
+    title: "Lead Developer",
+    info: "I had the pleasure of working alongside with Erick in couple of projects. His meticulous attention to detail, strong analytical skills, and dedication to ensuring product quality were evident in every project. Erick is a valuable asset to any team, and I highly recommend them for their expertise.",
   },
   {
-    tempId: 3,
-    testimonial:
-      "COMPANY's products make planning for the future seamless. Can't recommend them enough!",
-    by: "Marie, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/4.jpg",
+    id: 4,
+    img: "https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+    name: "Danica W.",
+    title: "Founder of XYZ",
+    info: "Erick demostró no solo habilidades técnicas sólidas sino también un compromiso importante con sus responsabilidades. Su enfoque meticuloso y su capacidad para abordar desafíos complejos fueron de gran valor para el equipo y contribuyeron significativamente al éxito de nuestros proyectos. ",
   },
   {
-    tempId: 4,
-    testimonial: "If I could give 11 stars, I'd give 12.",
-    by: "Andre, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/5.jpg",
-  },
-  {
-    tempId: 5,
-    testimonial:
-      "SO SO SO HAPPY WE FOUND YOU GUYS!!!! I'd bet you've saved me 100 hours so far.",
-    by: "Jeremy, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/6.jpg",
-  },
-  {
-    tempId: 6,
-    testimonial:
-      "Took some convincing, but now that we're on COMPANY, we're never going back.",
-    by: "Pam, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/7.jpg",
-  },
-  {
-    tempId: 7,
-    testimonial:
-      "I would be lost without COMPANY's in depth analytics. The ROI is EASILY 100X for us.",
-    by: "Daniel, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/8.jpg",
-  },
-  {
-    tempId: 8,
-    testimonial: "It's just the best. Period.",
-    by: "Fernando, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/9.jpg",
-  },
-  {
-    tempId: 9,
-    testimonial: "I switched 5 years ago and never looked back.",
-    by: "Andy, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/10.jpg",
-  },
-  {
-    tempId: 10,
-    testimonial:
-      "I've been searching for a solution like COMPANY for YEARS. So glad I finally found one!",
-    by: "Pete, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/11.jpg",
-  },
-  {
-    tempId: 11,
-    testimonial:
-      "It's so simple and intuitive, we got the team up to speed in 10 minutes.",
-    by: "Marina, CEO at COMPANY",
-    imgSrc: "/imgs/head-shots/12.jpg",
+    id: 5,
+    img: "https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    name: "Peter H.",
+    title: "Founder of XYZ",
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nostrum labore.",
   },
 ];

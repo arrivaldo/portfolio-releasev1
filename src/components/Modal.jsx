@@ -8,7 +8,10 @@ const Modal = ({ title, timeline, icon }) => {
 
   return (
     <div className="">
-      <button onClick={() => setIsOpen(true)} className="text-[#84cdeb]">
+      <button onClick={() => setIsOpen(true)} 
+      // className="text-[#84cdeb]"
+      className="text-[rgb(141, 147, 160)]"
+      >
         Read More
       </button>
       <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} title={title} timeline={timeline} icon={icon} />
@@ -53,7 +56,7 @@ const SpringModal = ({ isOpen, setIsOpen, title, timeline, icon }) => {
                     <h3 className="text-2xl font-semibold dark:text-white">
                       {item.title}
                     </h3>
-                    <p className="mb-4 text-2xl font-normal text-gray-500 dark:text-gray-400">
+                    <p className="mb-4 text-2xl font-normal text-gray-300">
                       {item.description}
                     </p>
                   </li>

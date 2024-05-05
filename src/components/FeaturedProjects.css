@@ -1,4 +1,4 @@
-
+/* 
 .project-container{
     display: flex;
     background: #1e1e1e;
@@ -52,7 +52,6 @@
   
   .line-container{
     position: relative;
-    /* z-index: 10000000000; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -63,4 +62,4 @@
     height: 1px;
   }
   
-  
+   */

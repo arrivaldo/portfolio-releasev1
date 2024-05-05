@@ -1,0 +1,66 @@
+
+.project-container{
+    display: flex;
+    background: #1e1e1e;
+    margin-top: 2%;
+    width: 100%;
+    border-radius: 20px;
+    
+  
+  
+  }
+  
+  .project-container-reversed {
+    flex-direction: row-reverse;
+  }
+  
+   .stroke{
+     -webkit-text-stroke: 1px black; 
+     text-stroke: 1px black; 
+   background-clip: #000;
+   }
+  
+  .cover-container{
+    width: 100%;
+    background: #1e1e1e;
+    margin-top: 2%;
+    display: flex;
+    border-radius: 20px;
+  
+  }
+  
+  .cover{
+    width: 55%;
+    padding: 2%;
+    border-radius: 50px;
+   object-fit: cover;
+  }
+  
+  
+  .viewbtn {
+    display: inline-block;
+      border-radius: 5em;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: transform 0.2s ease-in-out;
+      padding: 1em 0;
+      background-color: var(--primary);
+      color: var(--bg);
+      cursor: pointer;
+  }
+  
+  
+  .line-container{
+    position: relative;
+    /* z-index: 10000000000; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .line{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.0) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0) 100%);;
+    width: 1000px;
+    height: 1px;
+  }
+  
+  

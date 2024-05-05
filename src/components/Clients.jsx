@@ -45,7 +45,7 @@ const Clients = () => {
     <>
       <div
         style={{
-          padding: "0 8%",
+          padding: "0 6%",
           height: "100%",
           borderLeft: "1px solid #2e2e32",
           borderRight: "1px solid #2e2e32",
@@ -57,7 +57,7 @@ const Clients = () => {
         className="text-xl"
         style={{
           width: "100%",
-          padding: "0 8%",
+          padding: "0 6%",
           color: "#e3e3e3",
           // marginBottom: "1%",
           display: "flex",
@@ -71,7 +71,7 @@ const Clients = () => {
       </h1>
 
       <div
-        style={{ position: "relative", zIndex: "-1" }}
+        style={{ position: "relative"}}
         className="text-xl font-bold falseBody overflow-x-hidden"
       >
         <div className="scroller overflow-x-hidden" data-speed="slow">

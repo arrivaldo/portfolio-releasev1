@@ -102,7 +102,9 @@ const FeaturedProjects2 = () => {
             <div className="absolute inset-0 translate-z-0 bg-gray-800 rounded-full blur-[80px]"></div>
           </div> */}
 
-      <div style={{ background: "rgb(8 8 47)", padding: "1rem" }}>
+      <div  style={{
+          background: "rgb(8 8 47)",
+          padding: "1rem" }}>
       
         <div className="flex justify-between w-full">
           <div className="flex flex-col w-full flex-1 pr-9">
@@ -139,7 +141,7 @@ const FeaturedProjects2 = () => {
 
             <div className="project-text">
               <p
-                className="text-xl"
+                className="text-lg"
                 style={{
                   // marginTop: "2%",
                   fontWeight: "400",

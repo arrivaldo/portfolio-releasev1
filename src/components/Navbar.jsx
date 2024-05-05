@@ -4,6 +4,7 @@ import {
     useMotionValue,
     useSpring,
     useTransform,
+    useScroll
   } from "framer-motion";
   import { useEffect, useRef, useState } from "react";
   
@@ -36,13 +37,17 @@ import {
   const navItems = [
     { position: 1, title: "Home" },
     { position: 8, title: "About" },
-    { position: 20, title: "Services" },
+    { position: 17, title: "Services" },
     { position: 25, title: "Pricing" },
   ];
   
   const SideStaggerNavigation = () => {
     const [isHovered, setIsHovered] = useState(false);
     const mouseY = useMotionValue(Infinity);
+
+    const { scrollY } = useScroll();
+
+    
   
     return (
       <motion.nav
@@ -52,9 +57,9 @@ import {
         }}
         onMouseLeave={() => {
           mouseY.set(Infinity);
-          setIsHovered(false);
+          setIsHovered(true);
         }}
-        className="fixed left-0 top-0 flex h-screen flex-col items-end justify-between py-4 pl-8"
+        className="fixed left-0 top-0 flex h-screen flex-col items-end justify-between py-4 pl-4"
       >
         {Array.from(Array(NUM_LINES).keys()).map((i) => {
           const linkContent = navItems.find((item) => item.position === i + 1);

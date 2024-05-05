@@ -20,13 +20,13 @@ import { animate, useInView } from "framer-motion";
           num={8}
           decimals={0}
           suffix="+"
-          subheading="Lorem ipsum dolor sit amet consectetur"
+          subheading="Lorem ipsum dolor sit"
         />
         <div className=" bg-indigo-200 " />
         <Stat
           num={20}
           suffix="B+"
-          subheading="Lorem ipsum dolor sit amet consectetur"
+          subheading="Lorem ipsum dolor sit"
         />
       </div>
     </div>

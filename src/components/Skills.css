@@ -18,27 +18,13 @@
   }
 
 
-  .stack-titles{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    position:absolute;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .stack-title{
-    font-size: 60px;
-    margin: 0;
-  }
 
 
 
   
   .tech-container {
     width: 8em;
-    height: 5em;
+    height: 4em;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -49,20 +35,21 @@
     font-weight: 500;
 
     border-radius: 29px;
-    background: rgba( 5, 8, 22, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     gap: 7px;
+    background: #2f2b4b3b;
+    background: #20157140;
+    border: 1px solid #c1c1c159
   }
   
 .tech-container:hover{
   transform: scale(1.2);
 }
 
-  .tech-container::before {
+  /* .tech-container::before {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -77,117 +64,15 @@
   
   .tech-container:hover::before {
     transform: scaleX(1);
-  }
+  } */
   
   .tech-container i {
     font-size: 2rem;
     margin-bottom: 0.2em;
   }
   
-  .contact ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .contact .btn {
-    margin-right: 0.5em;
-    margin-top: 0.3em;
-  }
-  
-  .contact .icon,
-  .hero .icon {
-    margin-right: 0.2em;
-  }
-  
-  
-  
-  @media (max-width: 950px) {
-    .project-container {
-      flex-direction: column;
-      max-width: 450px;
-      padding: 1.5em;
-    }
-  
-    .project img {
-      max-width: 100%;
-      max-height: 100%;
-      margin: 0 auto;
-      margin-bottom: 2em;
-    }
-  
-    .project-content {
-      padding: 0;
-      margin-left: 0;
-    }
-  }
-  
-  @media (max-width: 580px) {
-    nav ul {
-      flex-direction: column;
-      padding: 4em 0;
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 5em;
-      background-color: var(--bg);
-      width: 0;
-      overflow: hidden;
-      transition: width 0.2s ease-in-out;
-    }
-  
-    .display-nav-list {
-      width: 100%;
-    }
-  
-    nav li {
-      margin: 0.5em 0;
-    }
-  
-    
-  
-    .hero {
-      padding-bottom: 1em;
-      flex-direction: column;
-    }
-  
-    .hero h1,
-    .hero-about {
-      width: 100%;
-    }
-  
-  
-  
-    .stack-container i {
-      font-size: 3rem;
-    }
-  }
-  
-  /* =================
-       4. components
-     ================= */
-  
-  /* buttons */
-  
-  .btn {
-    display: inline-block;
-    border-radius: 5em;
-    font-size: 0.8rem;
-    font-weight: 600;
-    transition: transform 0.2s ease-in-out;
-    padding: 1em 1.6em;
-    background-color: var(--primary);
-    color: var(--bg);
-  }
-  
-  .btn:hover {
-    background-color: var(--primary-alt);
-  }
-  
-  .btn:active {
-    transform: translateY(-0.4em);
-  }
-  
-  /* icons */
+   
+
   
   .icon-normal,
   .icon-border {
@@ -239,7 +124,7 @@
     border: 0.15em solid var(--primary);
   }
   
-  /* icons */
+
   
   .scroll-container {
     display: flex;
@@ -280,9 +165,7 @@
     }
   }
   
-  /* ============
-     5. utilities
-     ============ */
+
   
   .fa-bars {
     display: none;

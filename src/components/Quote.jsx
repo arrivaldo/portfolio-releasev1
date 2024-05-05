@@ -6,10 +6,11 @@ const Quote = () => {
     <>
       <div
         style={{
-          padding: "0% 10%",
-          paddingTop: '10%'
+          padding: "0% 8%",
+          // paddingTop: '10%'
          // display: "flex",
          // justifyContent: "center",
+         marginTop: '15%'
         }}
       >
         <div className="line-container">

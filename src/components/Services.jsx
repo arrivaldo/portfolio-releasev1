@@ -15,7 +15,7 @@ const Services = () => {
 
   return (
     <>
-      <section id="services" style={{ padding: "0 8%", marginBottom: "6%", marginTop: '6%' }}>
+      <section id="services" style={{ padding: "0 6%", marginBottom: "6%", marginTop: '6%' }}>
         <h1
           className="text-xl"
           style={{
@@ -52,7 +52,7 @@ const Services = () => {
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
-                  <h3 className="text-xl">Full Stack Dev</h3>
+                  <h3 className="text-xl">Full Stack</h3>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -72,37 +72,43 @@ const Services = () => {
 
                 {/* <h4 className="text-lg cursor-pointer text-[#84cdeb] ">Read More</h4>  */}
                 <Modal
-                  title="Full Stack Dev"
+                  title="Full Stack Developer"
                   timeline={[
                     {
                       date: "February 2022",
-                      title: "System Architect",
+                      title: "MERN Stack Development",
                       description:
-                        "",
+                        "Application development using Mongo DB, Express.js, React and Node.js.",
                     },
                     {
                       date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                      title: "Pega System Architect",
                       description:
-                        "",
+                        "Application development through Pega's CRM as a certified CSA.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                      date: "",
+                      title: "Continuous Integration/Continuous Deployment (CI/CD)",
                       description:
                         "All of the pages and components are first designed in Figma.",
                     },
                     {
                       date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                      title: "RESTful API Integration",
                       description:
                         "All of the pages and components are first designed in Figma.",
                     },
                     {
                       date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                      title: "More technologies i've worked with",
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "TypeScript, C, SQL, Next.js,  Three.js, React Native, Tailwind, Webflow, ES6+",
+                    },
+                    {
+                      date: "March 2022",
+                      title: "Other Important Topics",
+                      description:
+                        "Version Control (Git), Testing (TDD), Performance (Code Splitting, Lazy Loading)",
                     },
                   ]}
                   icon={
@@ -159,32 +165,31 @@ const Services = () => {
                   title="QA Analyst"
                   timeline={[
                     {
-                      date: "February 2022",
-                      title: "Application UI code in Tailwind CSS",
+                      
                       description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "I've been the QA leader of a testing team for some international projects.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                      
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "Collaborated with clients, staff members and IT colleagues to define detailed client requirements.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+              
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "I've defined the test plan, test aproach, test objectives and test activities for the team project.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                      
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "I've performed Functional Testing Regression, Integration, Acceptance.",
+                    },
+                   
+                    {
+                      description:
+                        "Certified ISQB Tester.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
                       description:
                         "All of the pages and components are first designed in Figma.",
                     },
@@ -216,7 +221,7 @@ const Services = () => {
           >
             <div
               style={{ background: "rgb(8 8 47)" }}
-              className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
+              className=" relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
@@ -243,34 +248,29 @@ const Services = () => {
                   title="Business Architect"
                   timeline={[
                     {
-                      date: "February 2022",
-                      title: "Application UI code in Tailwind CSS",
+                     
                       description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "As a certified Business Architect In dept understanding of the project life cycle",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                     
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "Identify needs, gaps and bottlenecks, within the DevOps processes.  ",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                   
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "Reviewing the new Process Design to confirm alignment with the business needs and outcomes",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                   
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "ensure that the Business team understands the solution design and is enabled to provide the right guidance and feedback to keep the solution aligned with the business objectives. At the same time, your goal is to ensure that the Pega developers have an extremely good understanding of the business needs and are enabled to appropriately advise on the best use ",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                     
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "Collaborated with Business teams and developers on designing, creating and testing the Pega solution.",
                     },
                   ]}
                   icon={
@@ -320,40 +320,33 @@ const Services = () => {
                     <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                   </svg>
                 </div>
-
-                {/* <h4 className="text-lg cursor-pointer text-[#84cdeb] ">Read More</h4>  */}
                 <Modal
                   title="Mechatronic Engineer"
                   timeline={[
                     {
-                      date: "February 2022",
-                      title: "Application UI code in Tailwind CSS",
+                    
                       description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                        "Your knowledge will allow you to have an impact on the increase of quality, productivity and competitiveness of companies.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                    
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "propose improvements in processes and products, with emphasis on the quality of manufacturing and automation systems.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                  
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "solve system automation problems, efficiently managing their instrumentation, supervision and control.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+                     
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "Apply microprocessor, microcontroller and programmable logic controller (PLC) technologies.",
                     },
                     {
-                      date: "March 2022",
-                      title: "Marketing UI design in Figma",
+              
                       description:
-                        "All of the pages and components are first designed in Figma.",
+                        "systems, electronics, mechanics and control, with the combined use of robotics and electronic engineering and computer/systems science.",
                     },
                   ]}
                   icon={
@@ -377,6 +370,10 @@ const Services = () => {
             </div>
           </div>
         </div>
+
+        {/* <button className="lineGrad">
+                  Hey
+        </button> */}
       </section>
     </>
   );

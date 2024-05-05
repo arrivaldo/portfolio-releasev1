@@ -13,7 +13,7 @@
 .z1 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 15px 15px;
   grid-auto-flow: row;
   grid-template-areas:
     "z1a z1b z1c z1d z1e z1f";
@@ -21,13 +21,24 @@
   place-items: center;
 }
 
-.z1a { grid-area: z1a;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z1a { grid-area: z1a;  
+  /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
 
-.z1b { grid-area: z1b; border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z1b { 
+  grid-area: z1b;
+   /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
 
-.z1c { grid-area: z1c;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z1c { 
+  grid-area: z1c;  
+  /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
 
-.z1f { grid-area: z1f;  border-right: 1px solid rgba( 255, 255, 255, 0.18 );  }
+.z1f { 
+  grid-area: z1f;  
+  /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );   */
+}
 
 .z1d { grid-area: z1d; }
 
@@ -36,7 +47,7 @@
 .z2 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 15px 15px;
   grid-auto-flow: row;
   grid-template-areas:
     "z2a z2b z2c z2d z2e z2f";
@@ -45,13 +56,21 @@
 
 }
 
-.z2a { grid-area: z2a;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z2a { grid-area: z2a;  
+  /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
 
-.z2b { grid-area: z2b;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z2b { grid-area: z2b; 
+   /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+  }
 
-.z2c { grid-area: z2c;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z2c { grid-area: z2c;  
+  /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
 
-.z2d { grid-area: z2d;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z2d { grid-area: z2d; 
+   /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+  }
 
 .z2e { grid-area: z2e; }
 
@@ -60,7 +79,7 @@
 .z3 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 15px 15px;
   grid-auto-flow: row;
   grid-template-areas:
     "z3a z3b z3c z3d z3e z3f";
@@ -71,11 +90,17 @@
 
 .z3a { grid-area: z3a; }
 
-.z3b { grid-area: z3b;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z3b { grid-area: z3b; 
+   /* border-right: 1px solid rgba( 255, 255, 255, 0.18 ); */
+   }
 
-.z3c { grid-area: z3c;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z3c { grid-area: z3c; 
+   /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+  }
 
-.z3d { grid-area: z3d;  border-right: 1px solid rgba( 255, 255, 255, 0.18 ); }
+.z3d { grid-area: z3d;  
+  /* border-right: 1px solid rgba( 255, 255, 255, 0.18 );  */
+}
 
 .z3e { grid-area: z3e; }
 
@@ -87,7 +112,7 @@
 .f2 {  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 15px 15px;
   grid-auto-flow: row;
   grid-template-areas:
     "f2a f2b f2c f2d f2e f2f";

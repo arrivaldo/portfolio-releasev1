@@ -1,0 +1,19 @@
+#testimonials-section {
+	/* padding: 80px 0;
+    background: linear-gradient( rgb(0, 0, 0), rgba(0, 22, 37, 0.85) ), url(https://meral.ar-lab.ga/img/testimonials-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed; */
+	color: #a1aaad;
+    padding: 0 6%;
+}
+
+.hr {
+    height: 3px;
+    width: 150px;
+    position: relative;
+    background: #a5a5a5;
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
