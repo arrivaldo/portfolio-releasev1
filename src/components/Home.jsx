@@ -23,7 +23,7 @@ const Home = () => {
       //     padding: "0% 6%",
       //     marginTop: "2%",
       //  }}
-        className="padding-home flex w-full justify-between items-center p[0% 6%]"
+        className="padding-home flex w-full justify-between items-center mobile:flex-col "
       >
         <div
           style={{
