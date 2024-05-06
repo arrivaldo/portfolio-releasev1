@@ -90,11 +90,22 @@ const FeaturedProjects4 = () => {
 
   const projects = portfolio.map((project, index) => {
     const isEven = index % 2 === 0;
-    const projectClass = isEven ? "flex-row" : "flex-row-reverse";
+    let projectClass = `${
+      isEven ? "flex-row" : "flex-row-reverse"
+    }`;
+
     const titleClass = isEven ? "text-start" : "text-end";
     const itemsClass = isEven ? "justify-start" : "justify-end";
-    const parrafClass = isEven ? "w-[110%]" : "w-[110%], ml-[-10%]";
+    let parrafClass = isEven ? "w-[110%]" : "w-[110%], ml-[-10%]";
     const hoverClass = isEven ? "left-0" : "right-0";
+
+
+    if (window.matchMedia("(min-width: 320px) and (max-width: 500px)").matches) {
+      projectClass = isEven ? "" : "flex-row";
+      parrafClass = isEven ? "w-[100%]" : "w-[100%], ml-[0%]";
+
+    }
+
 
     return (
       <div key={index} className="projectMain-container">
