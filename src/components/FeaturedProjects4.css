@@ -135,6 +135,19 @@
 
 
 
+@media screen and (min-width: 501px) and (max-width: 819px) { 
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+
+  .p-featured {
+    padding: 0 16%;
+}
+}
+
+
+
+
+
+
 
 /* 
 .project-img {

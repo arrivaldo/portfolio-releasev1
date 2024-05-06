@@ -28,9 +28,8 @@ const Home = () => {
         <div
           style={{
      
-          width: "56%",
           }}
-          className="flex flex-col justify-center "
+          className="mainText flex flex-col justify-center "
         >
           <h3 className="text-xl" style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
