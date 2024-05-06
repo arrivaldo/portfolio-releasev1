@@ -1,3 +1,12 @@
+
+/* @media screen and (min-width: 320px) and (max-width: 900px) { 
+    
+    
+} */
+.p-about{
+    padding: 0 6%;
+}
+
 .layer {  display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.1fr 0.9fr;
@@ -27,6 +36,8 @@
       grid-template-rows: auto; 
     }
   } */
+
+  
   
   .upper-cont {  display: grid;
     grid-template-columns: 1fr;
@@ -38,6 +49,11 @@
       "upper21";
     grid-area: upper-cont;
   }
+
+
+  
+
+
   
   .upper11 { grid-area: upper11;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; 
   
@@ -73,6 +89,9 @@
   .low1 { grid-area: low1;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; height: 100%; }
   .low2 { grid-area: low2; padding: 5%; border-radius: 1rem;    }
 
+
+
+
   .bgColor{
     
     backdrop-filter: blur(16px) saturate(180%);
@@ -82,3 +101,46 @@
     border: 1px solid rgba(255, 255, 255, 0.125);
     
   }
+
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+
+    .p-about {
+      padding: 0 33%;
+    }
+
+    .layer {
+      grid-template-columns: 1fr; /* Change to a single column */
+      grid-template-rows: auto; /* Allow rows to adjust based on content */
+      grid-template-areas: 
+        "upper1"
+        "bottom1";
+    }
+  
+    .upper1 {
+      grid-template-columns: 1fr; /* Change to a single column */
+      grid-template-rows: auto; /* Allow rows to adjust based on content */
+      grid-template-areas: 
+        "upper-cont"
+        "upper-cont2";
+        width: 63%;
+    }
+  
+    .upper-cont, .upper-cont2, .bottom1 {
+      grid-template-columns: 1fr; /* Change to a single column */
+      grid-template-rows: auto; /* Allow rows to adjust based on content */
+      grid-template-areas: 
+        "content"; /* You can name this area as you wish */
+    }
+  
+    .upper11, .upper21, .upper12, .upper22, .low1, .low2 {
+      grid-area: content; /* Ensure all items occupy the 'content' area */
+      
+    }
+
+    .bottom1 {
+      width: 63%;
+
+    }
+  }
+  

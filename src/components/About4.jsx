@@ -7,7 +7,6 @@ import Stack from "./Stack";
 import CountUpStats from "./CountUpStats";
 import Tabs from "./Tabs";
 
-
 const About4 = () => {
   const spotlightRef = useRef(null);
 
@@ -35,7 +34,7 @@ const About4 = () => {
 
   return (
     <>
-      <section style={{ padding: "0 6%", marginTop: "6%" }}>
+      <section className="p-about" style={{ marginTop: "6%" }}>
         <div className="layer">
           <div className="upper1">
             <div
@@ -49,10 +48,11 @@ const About4 = () => {
                 >
                   <div className="group upper11">
                     <Profile />
-                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
-
+                    <button
+                      style={{ bottom: "-10px", height: "12px" }}
+                      className="absolute left-0  w-full p-0 linearGrad   hoverGrad"
+                    ></button>
                   </div>
-                  
                 </div>
               </div>
 
@@ -63,8 +63,10 @@ const About4 = () => {
                 >
                   <div className="group upper21">
                     <Jobs />
-                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
-
+                    <button
+                      style={{ bottom: "-10px", height: "12px" }}
+                      className="absolute left-0  w-full p-0 linearGrad   hoverGrad"
+                    ></button>
                   </div>
                 </div>
               </div>
@@ -96,8 +98,10 @@ const About4 = () => {
                       <a className="text-lg text-[#84cdeb]">Read article -</a>
                     </div>
 
-                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
-
+                    <button
+                      style={{ bottom: "-10px", height: "12px" }}
+                      className="absolute left-0  w-full p-0 linearGrad   hoverGrad"
+                    ></button>
                   </div>
                 </div>
               </div>
@@ -124,8 +128,10 @@ const About4 = () => {
                       </p>
                       <a className="text-lg text-[#84cdeb]">Read article -</a>
                     </div>
-                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
-
+                    <button
+                      style={{ bottom: "-10px", height: "12px" }}
+                      className="absolute left-0  w-full p-0 linearGrad   hoverGrad"
+                    ></button>
                   </div>
                 </div>
               </div>
@@ -159,8 +165,10 @@ const About4 = () => {
                 >
                   <div className="group low2">
                     <CountUpStats />
-                    <button style={{bottom: '-10px', height: '12px'}} className="absolute left-0  w-full p-0 linearGrad   hoverGrad"></button>
-
+                    <button
+                      style={{ bottom: "-10px", height: "12px" }}
+                      className="absolute left-0  w-full p-0 linearGrad   hoverGrad"
+                    ></button>
                   </div>
                 </div>
               </div>

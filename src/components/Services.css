@@ -1,35 +1,26 @@
-
-
 .services-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 25px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust column width */
+  grid-template-rows: auto; /* Auto-sized rows */
+  gap: 25px 25px;
   grid-auto-flow: row;
-  grid-template-areas: "service-box1 service-box2 service-box3 service-box4";
 }
 
-.service-box1 {
-  grid-area: service-box1;
+.service-box1, .service-box2, .service-box3, .service-box4 {
   border: 1px solid #c1c1c194;
   padding: 5%;
 }
 
-.service-box2 {
-  grid-area: service-box2;
-  border: 1px solid #c1c1c194;
-  padding: 5%;
+@media screen and (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
 }
 
-.service-box3 {
-  grid-area: service-box3;
-  border: 1px solid #c1c1c194;
-  padding: 5%;
+@media screen and (min-width: 320px) and (max-width: 500px) { 
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+  .services-container {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    padding: 0 33%;
+  }
 }
-
-.service-box4 {
-  grid-area: service-box4;
-  border: 1px solid #c1c1c194;
-  padding: 5%;
-}
-
