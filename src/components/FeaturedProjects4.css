@@ -108,6 +108,25 @@
   background: transparent; /* Reset background */
 }
 
+.p-featured {
+    padding: 0 6%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 500px) { 
+  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+
+  .project-img {
+    position: absolute;
+    z-index: -1;
+  }
+
+  
+.p-featured {
+  padding: 0 33%;
+}
+
+}
 
 
 

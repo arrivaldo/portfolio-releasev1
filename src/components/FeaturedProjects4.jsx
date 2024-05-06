@@ -149,7 +149,7 @@ const FeaturedProjects4 = () => {
 
   return (
     <>
-      <div style={{ padding: "0 6%", marginTop: "6%" }}>
+      <div className="p-featured" style={{ marginTop: "6%" }}>
         <h1
           className="text-xl"
           style={{
