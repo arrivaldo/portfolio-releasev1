@@ -122,6 +122,10 @@
     width: 100%;
   }
 
+  .project-img img {
+  opacity: 0.5;
+  }
+
   
 .p-featured {
   padding: 0 33%;
