@@ -103,7 +103,46 @@
   }
 
 
-  @media screen and (min-width: 320px) and (max-width: 500px) {
+
+
+  @media screen and (min-width: 320px) and (max-width: 399px) {
+
+    .p-about {
+      padding: 0 33%;
+    }
+
+    .layer {
+      grid-template-columns: 1fr; /* Change to a single column */
+      grid-template-rows: auto; /* Allow rows to adjust based on content */
+      grid-template-areas: 
+        "upper1"
+        "bottom1";
+    }
+  
+    .upper1 {
+      grid-template-columns: 1fr; /* Change to a single column */
+      grid-template-rows: auto; /* Allow rows to adjust based on content */
+      grid-template-areas: 
+        "upper-cont"
+        "upper-cont2";
+        width: 52%;
+    }
+  
+    .upper-cont, .upper-cont2, .bottom1 {
+      grid-template-columns: 1fr; /* Change to a single column */
+      grid-template-rows: auto; /* Allow rows to adjust based on content */
+      grid-template-areas: 
+        "content'"; /* You can name this area as you wish */
+    }
+  
+    .upper11, .upper21, .upper12, .upper22, .low1, .low2 {
+      grid-area: content; /* Ensure all items occupy the 'content' area */ 
+    }
+  }
+  
+
+
+  @media screen and (min-width: 400px) and (max-width: 500px) {
 
     .p-about {
       padding: 0 33%;
@@ -130,17 +169,14 @@
       grid-template-columns: 1fr; /* Change to a single column */
       grid-template-rows: auto; /* Allow rows to adjust based on content */
       grid-template-areas: 
-        "content"; /* You can name this area as you wish */
+        "content'"; /* You can name this area as you wish */
     }
   
     .upper11, .upper21, .upper12, .upper22, .low1, .low2 {
-      grid-area: content; /* Ensure all items occupy the 'content' area */
-      
-    }
-
-    .bottom1 {
-      width: 63%;
-
+      grid-area: content; /* Ensure all items occupy the 'content' area */ 
     }
   }
+  
+
+
   

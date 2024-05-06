@@ -44,21 +44,21 @@ const Clients = () => {
   return (
     <>
       <div
+      className=""
         style={{
-          padding: "0 6%",
           height: "100%",
           borderLeft: "1px solid #2e2e32",
           borderRight: "1px solid #2e2e32",
           zIndex: "10",
         }}
-      ></div>
+      >
 
       <h1
-        className="text-xl"
+        className="p-title-clients text-xl"
         style={{
           width: "100%",
-          padding: "0 6%",
           color: "#e3e3e3",
+
           // marginBottom: "1%",
           display: "flex",
           justifyContent: "flex-start",
@@ -154,6 +154,7 @@ const Clients = () => {
           <li>UI/UX</li> */}
           </ul>
         </div>
+      </div>
       </div>
     </>
   );
