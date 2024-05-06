@@ -94,8 +94,8 @@ const FeaturedProjects4 = () => {
       isEven ? "flex-row" : "flex-row-reverse"
     }`;
 
-    const titleClass = isEven ? "text-start" : "text-end";
-    const itemsClass = isEven ? "justify-start" : "justify-end";
+    let titleClass = isEven ? "text-start" : "text-end";
+    let itemsClass = isEven ? "justify-start" : "justify-end";
     let parrafClass = isEven ? "w-[110%]" : "w-[110%], ml-[-10%]";
     const hoverClass = isEven ? "left-0" : "right-0";
 
@@ -103,6 +103,9 @@ const FeaturedProjects4 = () => {
     if (window.matchMedia("(min-width: 320px) and (max-width: 500px)").matches) {
       projectClass = isEven ? "" : "flex-row";
       parrafClass = isEven ? "w-[100%]" : "w-[100%], ml-[0%]";
+      titleClass = isEven ? "" : "text-start";
+      itemsClass = isEven ? "" : "justify-start";
+
 
     }
 
