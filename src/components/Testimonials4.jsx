@@ -96,7 +96,7 @@ const Testimonials4 = () => {
 
   return (
     <div id="testimonials-section" className="text-center">
-      <div className="flex w-full justify-center">
+      <div className="quotes flex w-full justify-center">
         <span style={{ marginTop: "-15%" }} className="text-7xl text-slate-700">
           <ImQuotesLeft style={{ width: "100%" }} />
         </span>
