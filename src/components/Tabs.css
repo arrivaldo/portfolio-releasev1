@@ -1,21 +1,24 @@
 .container-tabs {
     position: relative;
 
-    width: 500px;
+    /* width: 500px; */
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
   }
   
   .tabs {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: relative;
     z-index: 3;
     width: max-content;
+    margin-bottom: 5%;
+    align-items: center;
+
   }
   
   .tab {
-    width: 100px;
+    width: 150px;
     height: 40px;
     text-align: center;
     font-weight: bold;
@@ -69,7 +72,7 @@
   
   .content-tabs {
     position: relative;
-    padding: 0 40px; /* Define $spacing as per your requirement */
+    /* padding: 0 40px;  */
   }
   
   .content__section {

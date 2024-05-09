@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { animate, useInView } from "framer-motion";
+import './CountUpStats.css'
+
 
  const CountUpStats = () => {
   return (
@@ -9,24 +11,24 @@ import { animate, useInView } from "framer-motion";
         <span className="text-indigo-500"> BEAUTIFUL LANDING PAGE</span>
       </h2> */}
 
-      <div className="flex flex-col gap-4 items-center justify-center  ">
+      <div className="stats">
         <Stat
           num={10}
           suffix="+"
-          subheading="Completed Projects"
+          subheading="Professional Projects"
+        />
+        <div className=" bg-indigo-200 " />
+        <Stat
+          num={5}
+          decimals={0}
+          suffix="+"
+          subheading="Years of Experience"
         />
         <div className=" bg-indigo-200 " />
         <Stat
           num={8}
-          decimals={0}
           suffix="+"
-          subheading="Lorem ipsum dolor sit"
-        />
-        <div className=" bg-indigo-200 " />
-        <Stat
-          num={20}
-          suffix="B+"
-          subheading="Lorem ipsum dolor sit"
+          subheading="Satisfied Clients"
         />
       </div>
     </div>
@@ -51,7 +53,7 @@ const Stat = ({ num, suffix, decimals = 0, subheading }) => {
   }, [num, decimals, isInView]);
 
   return (
-    <div className="flex  flex-col items-center  ">
+    <div className="flex  flex-col items-cente=  ">
       <p className="mb-2 text-center text-4xl font-semibold s">
         <span ref={ref}></span>
         {suffix}

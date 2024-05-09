@@ -1,0 +1,14 @@
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 500px) { 
+    .stats {
+        flex-direction: row;
+    }
+}

@@ -6,6 +6,7 @@ import Jobs from "./Jobs";
 import Stack from "./Stack";
 import CountUpStats from "./CountUpStats";
 import Tabs from "./Tabs";
+import Tabs2 from "./Tabs2";
 
 const About4 = () => {
   const spotlightRef = useRef(null);
@@ -146,11 +147,12 @@ const About4 = () => {
               <div className="" style={{ padding: "2px" }}>
                 <div
                   style={{}}
-                  className="relative h-full  bgColor rounded-[inherit]  overflow-visible"
+                  className="relative bgColor rounded-[inherit]  overflow-visible"
                 >
                   <div className="group low1">
                     {/* <Stack /> */}
-                    <Tabs />
+                    {/* <Tabs /> */}
+                    <Tabs2 />
                   </div>
                 </div>
               </div>

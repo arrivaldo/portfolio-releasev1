@@ -142,7 +142,7 @@ const Contact = () => {
 
           
   {/* <label for="message" className="block mb-2 text-sm font-medium text-white">Your message</label> */}
-  <textarea style={{border: '2px solid rgb(209 213 219', marginBottom: '2%'}} id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900  rounded-lg border focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+  <textarea style={{border: '2px solid rgb(209 213 219', marginBottom: '2%', background: 'transparent'}} id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900  rounded-lg border focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..."></textarea>
 
 
 

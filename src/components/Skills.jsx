@@ -7,12 +7,12 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <>
-      <h2 className="text-2xl">Lorem et ut atem.</h2>
+      {/* <h2 className="text-2xl">Lorem et ut atem.</h2>
       <p className="text-xl">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
         labore corrupti quibusdam consequuntur perferendis, nam architecto
         vitae.
-      </p>
+      </p> */}
       <div>
         <section id="stack" className="stack fade-in">
           <div className="stack-container">

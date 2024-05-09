@@ -104,7 +104,7 @@ const FeaturedProjects4 = () => {
       projectClass = isEven ? "" : "flex-row";
       parrafClass = isEven ? "w-[100%]" : "w-[100%], ml-[0%]";
       titleClass = isEven ? "" : "text-start";
-      itemsClass = isEven ? "" : "justify-start";
+      itemsClass = isEven ? "" : "justify-start0";
 
 
     }
@@ -112,7 +112,7 @@ const FeaturedProjects4 = () => {
 
     return (
       <div key={index} className="projectMain-container">
-        <div className={`relative project ${projectClass}`}>
+        <div className={`relative  project ${projectClass}`}>
           <div className="project-content">
             <div className={`project-label ${titleClass}`}>Game of Thrones</div>
             <h4 className={`project-title ${titleClass}`}>{project.title}</h4>

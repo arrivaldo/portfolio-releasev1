@@ -79,7 +79,7 @@ const Stack = () => {
           </div>
 
           <div className="f2">
-            <div className="f2a"></div>
+            {/* <div className="f2a"></div> */}
             <div className="f2b">
               <div className="tech-container">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
