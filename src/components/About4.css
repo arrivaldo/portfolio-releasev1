@@ -125,7 +125,7 @@
       grid-template-areas: 
         "upper-cont"
         "upper-cont2";
-        width: 52%;
+        /* width: 52%; */
     }
   
     .upper-cont, .upper-cont2, .bottom1 {
