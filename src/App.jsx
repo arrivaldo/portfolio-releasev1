@@ -61,7 +61,7 @@ function App() {
           <FeaturedProjects4 />
 
           {/* <CodeBeams /> */}
-          {/* <CodeBeams2 />  */}
+          <CodeBeams2 /> 
           {/* <Bento2 /> */}
 
           {/* <About /> */}

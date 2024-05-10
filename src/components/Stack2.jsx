@@ -1,26 +1,11 @@
-import React from "react";
-import Pega from "/images/pega2.png";
+import React from 'react'
+import './Stacks2.css'
 
-import "./Stack.css";
-
-const Stack = () => {
+const Stack2 = () => {
   return (
     <>
-      <section className="flex flex-col gap-4">
-        {/* <h2 className="text-2xl">Stack.</h2> */}
-        {/* <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          labore corrupti quibusdam consequuntur perferendis, nam architecto
-          vitae.
-        </p> */}
-
-        <div className="stack-main">
-          <div className="z1">
-            {/* <div className="z1a">
-              <h2 className="text-xl">Frontend</h2>
-            </div> */}
-            <div className="z1b">
-              <div className="tech-container">
+        <div className="flex flex-wrap gap-2">
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <path
                     fill="#F0DB4F"
@@ -33,9 +18,8 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">JavaScript</p>
               </div>
-            </div>
-            <div className="z1c">
-              <div className="tech-container">
+
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <g fill="#61DAFB">
                     <circle cx="64" cy="64" r="11.4"></circle>
@@ -44,10 +28,8 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">React</p>
               </div>
-            </div>
 
-            <div className="z1d">
-              <div className="tech-container">
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <path
                     fill="#4353ff"
@@ -56,9 +38,8 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">Webflow</p>
               </div>
-            </div>
-            <div className="z1e">
-              <div className="tech-container">
+
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
                   <path
@@ -69,60 +50,17 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">TypeScript</p>
               </div>
-            </div>
-            <div className="z1f">
-              <div className="tech-container">
-                <p className="text-lg">Next.js</p>
-              </div>
-            </div>
-          </div>
 
-          <div className="f2">
-            {/* <div className="f2a"></div> */}
-            <div className="f2b">
-              <div className="tech-container">
-                {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
-                  <circle cx="64" cy="64" r="64"></circle>
-                  <path
-                    fill="url(#a)"
-                    d="M106.317 112.014 49.167 38.4H38.4v51.179h8.614v-40.24l52.54 67.884a64.216 64.216 0 0 0 6.763-5.209z"
-                  ></path>
-                  <path
-                    fill="url(#b)"
-                    d="M81.778 38.4h8.533v51.2h-8.533z"
-                  ></path>
-                  <defs>
-                    <linearGradient
-                      id="a"
-                      x1="109"
-                      x2="144.5"
-                      y1="116.5"
-                      y2="160.5"
-                      gradientTransform="scale(.71111)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#fff"></stop>
-                      <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="b"
-                      x1="121"
-                      x2="120.799"
-                      y1="54"
-                      y2="106.875"
-                      gradientTransform="scale(.71111)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#fff"></stop>
-                      <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg> */}
+              <div className="tech">
                 <p className="text-lg">Next.js</p>
               </div>
-            </div>
-            <div className="f2c">
-              <div className="tech-container">
+
+              <div className="tech">
+                
+                <p className="text-lg">Next.js</p>
+              </div>
+
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <path
                     fillRule="evenodd"
@@ -134,9 +72,8 @@ const Stack = () => {
 
                 <p className="text-lg">Sass</p>
               </div>
-            </div>
-            <div className="f2d">
-              <div className="tech-container">
+
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }}
                   width="126"
                   height="126"
@@ -154,9 +91,9 @@ const Stack = () => {
 
                 <p className="text-lg">Wordpress</p>
               </div>
-            </div>
-            <div className="f2e">
-              <div className="tech-container">
+
+
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} width="101" height="102" viewBox="0 0 101 102" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.21818 0.761868C1.04866 0.764901 0.881995 0.806076 0.730564 0.882338C0.579133 0.9586 0.446822 1.06799 0.343455 1.20239C0.240088 1.33678 0.168318 1.49274 0.133474 1.65867C0.0986294 1.8246 0.101605 1.99624 0.14218 2.16087L24.5362 100.903C24.5835 101.095 24.6808 101.272 24.8181 101.415C24.9555 101.558 25.1281 101.663 25.3185 101.718C25.509 101.773 25.7106 101.777 25.9032 101.729C26.0957 101.682 26.2723 101.584 26.4152 101.447L99.8012 30.8569C99.9442 30.7195 100.048 30.5468 100.104 30.3563C100.159 30.1658 100.162 29.9641 100.115 29.7716C100.067 29.5791 99.9697 29.4025 99.8321 29.2597C99.6945 29.1168 99.5218 29.0127 99.3312 28.9579L1.54918 0.805868C1.44164 0.774876 1.33008 0.760048 1.21818 0.761868ZM2.80218 3.51587L96.8262 30.5859L26.2602 98.4629L2.80218 3.51587Z" fill="white"/>
 <path d="M50.1353 14.8401C49.9867 14.8369 49.8389 14.8631 49.7004 14.9171C49.5619 14.9712 49.4355 15.0521 49.3283 15.1551L12.6523 50.4601C12.5096 50.5976 12.4056 50.7703 12.3507 50.9607C12.2959 51.1512 12.2921 51.3527 12.3399 51.5451C12.3876 51.7374 12.4851 51.9138 12.6227 52.0566C12.7602 52.1993 12.9329 52.3033 13.1233 52.3581L61.9823 66.4401C62.1726 66.495 62.374 66.4988 62.5663 66.4513C62.7586 66.4037 62.9349 66.3064 63.0777 66.1691C63.2205 66.0318 63.3246 65.8593 63.3797 65.6691C63.4347 65.4788 63.4387 65.2774 63.3913 65.0851L51.2083 15.6981C51.1488 15.457 51.0113 15.2422 50.8174 15.0871C50.6234 14.932 50.3837 14.8452 50.1353 14.8401ZM49.4843 18.1401L60.7323 63.7301L15.6283 50.7301L49.4843 18.1401Z" fill="white"/>
@@ -166,20 +103,12 @@ const Stack = () => {
 
                 <p className="text-lg">Three.js</p>
               </div>
-            </div>
-            <div className="f2f">
-              <div className="tech-container">
+
+              <div className="tech">
                 <p className="text-lg">Next.js</p>
               </div>
-            </div>
-          </div>
 
-          <div className="z2">
-            {/* <div className="z2a">
-              <h2 className="text-xl">Backend</h2>
-            </div> */}
-            <div className="z2b">
-              <div className="tech-container">
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <path
                     fill="#00618A"
@@ -188,73 +117,14 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">Mysql</p>
               </div>
-            </div>
-            <div className="z2c">
-              <div className="tech-container">
-                {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
-                  <path
-                    fill="url(#a)"
-                    d="M66.958.825a6.07 6.07 0 0 0-6.035 0L11.103 29.76c-1.895 1.072-2.96 3.095-2.96 5.24v57.988c0 2.143 1.183 4.167 2.958 5.24l49.82 28.934a6.07 6.07 0 0 0 6.036 0l49.82-28.935c1.894-1.072 2.958-3.096 2.958-5.24V35c0-2.144-1.183-4.167-2.958-5.24z"
-                  ></path>
-                  <path
-                    fill="url(#b)"
-                    d="M116.897 29.76 66.841.825A8.161 8.161 0 0 0 65.302.23L9.21 96.798a6.251 6.251 0 0 0 1.657 1.43l50.057 28.934c1.42.833 3.076 1.072 4.615.595l52.66-96.925a3.702 3.702 0 0 0-1.302-1.072z"
-                  ></path>
-                  <path
-                    fill="url(#c)"
-                    d="M116.898 98.225c1.42-.833 2.485-2.262 2.958-3.81L65.066.108c-1.42-.238-2.959-.119-4.26.715L11.104 29.639l53.606 98.355c.71-.12 1.54-.358 2.25-.715z"
-                  ></path>
-                  <defs>
-                    <linearGradient
-                      id="a"
-                      x1="34.513"
-                      x2="27.157"
-                      y1="15.535"
-                      y2="30.448"
-                      gradientTransform="translate(-129.242 -73.715) scale(6.18523)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#3F873F"></stop>
-                      <stop offset=".33" stopColor="#3F8B3D"></stop>
-                      <stop offset=".637" stopColor="#3E9638"></stop>
-                      <stop offset=".934" stopColor="#3DA92E"></stop>
-                      <stop offset="1" stopColor="#3DAE2B"></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="b"
-                      x1="30.009"
-                      x2="50.533"
-                      y1="23.359"
-                      y2="8.288"
-                      gradientTransform="translate(-129.242 -73.715) scale(6.18523)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop offset=".138" stopColor="#3F873F"></stop>
-                      <stop offset=".402" stopColor="#52A044"></stop>
-                      <stop offset=".713" stopColor="#64B749"></stop>
-                      <stop offset=".908" stopColor="#6ABF4B"></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="c"
-                      x1="21.917"
-                      x2="40.555"
-                      y1="22.261"
-                      y2="22.261"
-                      gradientTransform="translate(-129.242 -73.715) scale(6.18523)"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop offset=".092" stopColor="#6ABF4B"></stop>
-                      <stop offset=".287" stopColor="#64B749"></stop>
-                      <stop offset=".598" stopColor="#52A044"></stop>
-                      <stop offset=".862" stopColor="#3F873F"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg> */}
+
+              <div className="tech">
+              
                 <p className="text-lg">Node.js</p>
               </div>
-            </div>
-            <div className="z2d">
-              <div className="tech-container">
+
+
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }}
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
@@ -270,142 +140,25 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">Express.js</p>
               </div>
-            </div>
-            <div className="z2e">
-              <div className="tech-container">
-                {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#439934"
-                    d="M88.038 42.812c1.605 4.643 2.761 9.383 3.141 14.296.472 6.095.256 12.147-1.029 18.142-.035.165-.109.32-.164.48-.403.001-.814-.049-1.208.012-3.329.523-6.655 1.065-9.981 1.604-3.438.557-6.881 1.092-10.313 1.687-1.216.21-2.721-.041-3.212 1.641-.014.046-.154.054-.235.08l.166-10.051-.169-24.252 1.602-.275c2.62-.429 5.24-.864 7.862-1.281 3.129-.497 6.261-.98 9.392-1.465 1.381-.215 2.764-.412 4.148-.618z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#45A538"
-                    d="M61.729 110.054c-1.69-1.453-3.439-2.842-5.059-4.37-8.717-8.222-15.093-17.899-18.233-29.566-.865-3.211-1.442-6.474-1.627-9.792-.13-2.322-.318-4.665-.154-6.975.437-6.144 1.325-12.229 3.127-18.147l.099-.138c.175.233.427.439.516.702 1.759 5.18 3.505 10.364 5.242 15.551 5.458 16.3 10.909 32.604 16.376 48.9.107.318.384.579.583.866l-.87 2.969z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#46A037"
-                    d="M88.038 42.812c-1.384.206-2.768.403-4.149.616-3.131.485-6.263.968-9.392 1.465-2.622.417-5.242.852-7.862 1.281l-1.602.275-.012-1.045c-.053-.859-.144-1.717-.154-2.576-.069-5.478-.112-10.956-.18-16.434-.042-3.429-.105-6.857-.175-10.285-.043-2.13-.089-4.261-.185-6.388-.052-1.143-.236-2.28-.311-3.423-.042-.657.016-1.319.029-1.979.817 1.583 1.616 3.178 2.456 4.749 1.327 2.484 3.441 4.314 5.344 6.311 7.523 7.892 12.864 17.068 16.193 27.433z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#409433"
-                    d="M65.036 80.753c.081-.026.222-.034.235-.08.491-1.682 1.996-1.431 3.212-1.641 3.432-.594 6.875-1.13 10.313-1.687 3.326-.539 6.652-1.081 9.981-1.604.394-.062.805-.011 1.208-.012-.622 2.22-1.112 4.488-1.901 6.647-.896 2.449-1.98 4.839-3.131 7.182a49.142 49.142 0 01-6.353 9.763c-1.919 2.308-4.058 4.441-6.202 6.548-1.185 1.165-2.582 2.114-3.882 3.161l-.337-.23-1.214-1.038-1.256-2.753a41.402 41.402 0 01-1.394-9.838l.023-.561.171-2.426c.057-.828.133-1.655.168-2.485.129-2.982.241-5.964.359-8.946z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#4FAA41"
-                    d="M65.036 80.753c-.118 2.982-.23 5.964-.357 8.947-.035.83-.111 1.657-.168 2.485l-.765.289c-1.699-5.002-3.399-9.951-5.062-14.913-2.75-8.209-5.467-16.431-8.213-24.642a4498.887 4498.887 0 00-6.7-19.867c-.105-.31-.407-.552-.617-.826l4.896-9.002c.168.292.39.565.496.879a6167.476 6167.476 0 016.768 20.118c2.916 8.73 5.814 17.467 8.728 26.198.116.349.308.671.491 1.062l.67-.78-.167 10.052z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#4AA73C"
-                    d="M43.155 32.227c.21.274.511.516.617.826a4498.887 4498.887 0 016.7 19.867c2.746 8.211 5.463 16.433 8.213 24.642 1.662 4.961 3.362 9.911 5.062 14.913l.765-.289-.171 2.426-.155.559c-.266 2.656-.49 5.318-.814 7.968-.163 1.328-.509 2.632-.772 3.947-.198-.287-.476-.548-.583-.866-5.467-16.297-10.918-32.6-16.376-48.9a3888.972 3888.972 0 00-5.242-15.551c-.089-.263-.34-.469-.516-.702l3.272-8.84z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#57AE47"
-                    d="M65.202 70.702l-.67.78c-.183-.391-.375-.714-.491-1.062-2.913-8.731-5.812-17.468-8.728-26.198a6167.476 6167.476 0 00-6.768-20.118c-.105-.314-.327-.588-.496-.879l6.055-7.965c.191.255.463.482.562.769 1.681 4.921 3.347 9.848 5.003 14.778 1.547 4.604 3.071 9.215 4.636 13.813.105.308.47.526.714.786l.012 1.045c.058 8.082.115 16.167.171 24.251z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#60B24F"
-                    d="M65.021 45.404c-.244-.26-.609-.478-.714-.786-1.565-4.598-3.089-9.209-4.636-13.813-1.656-4.93-3.322-9.856-5.003-14.778-.099-.287-.371-.514-.562-.769 1.969-1.928 3.877-3.925 5.925-5.764 1.821-1.634 3.285-3.386 3.352-5.968.003-.107.059-.214.145-.514l.519 1.306c-.013.661-.072 1.322-.029 1.979.075 1.143.259 2.28.311 3.423.096 2.127.142 4.258.185 6.388.069 3.428.132 6.856.175 10.285.067 5.478.111 10.956.18 16.434.008.861.098 1.718.152 2.577z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#A9AA88"
-                    d="M62.598 107.085c.263-1.315.609-2.62.772-3.947.325-2.649.548-5.312.814-7.968l.066-.01.066.011a41.402 41.402 0 001.394 9.838c-.176.232-.425.439-.518.701-.727 2.05-1.412 4.116-2.143 6.166-.1.28-.378.498-.574.744l-.747-2.566.87-2.969z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#B6B598"
-                    d="M62.476 112.621c.196-.246.475-.464.574-.744.731-2.05 1.417-4.115 2.143-6.166.093-.262.341-.469.518-.701l1.255 2.754c-.248.352-.59.669-.728 1.061l-2.404 7.059c-.099.283-.437.483-.663.722l-.695-3.985z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#C2C1A7"
-                    d="M63.171 116.605c.227-.238.564-.439.663-.722l2.404-7.059c.137-.391.48-.709.728-1.061l1.215 1.037c-.587.58-.913 1.25-.717 2.097l-.369 1.208c-.168.207-.411.387-.494.624-.839 2.403-1.64 4.819-2.485 7.222-.107.305-.404.544-.614.812-.109-1.387-.22-2.771-.331-4.158z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#CECDB7"
-                    d="M63.503 120.763c.209-.269.506-.508.614-.812.845-2.402 1.646-4.818 2.485-7.222.083-.236.325-.417.494-.624l-.509 5.545c-.136.157-.333.294-.398.477-.575 1.614-1.117 3.24-1.694 4.854-.119.333-.347.627-.525.938-.158-.207-.441-.407-.454-.623-.051-.841-.016-1.688-.013-2.533z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#DBDAC7"
-                    d="M63.969 123.919c.178-.312.406-.606.525-.938.578-1.613 1.119-3.239 1.694-4.854.065-.183.263-.319.398-.477l.012 3.64-1.218 3.124-1.411-.495z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#EBE9DC"
-                    d="M65.38 124.415l1.218-3.124.251 3.696-1.469-.572z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#CECDB7"
-                    d="M67.464 110.898c-.196-.847.129-1.518.717-2.097l.337.23-1.054 1.867z"
-                  ></path>
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    fill="#4FAA41"
-                    d="M64.316 95.172l-.066-.011-.066.01.155-.559-.023.56z"
-                  ></path>
-                </svg> */}
+
+              <div className="tech">
+               
                 <p className="text-lg">MongoDB</p>
               </div>
-            </div>
-            <div className="z2f">
-              <div className="tech-container">
+
+              <div className="tech">
                 <p className="text-lg">Next.js</p>
               </div>
-            </div>
-          </div>
-          <div className="z3">
-            {/* <div className="z3a">
-              <h2 className="text-xl">More Tech</h2>
-            </div> */}
-            <div className="z3b">
-              <div className="tech-container">
-                {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
-                  <path
-                    fill="#659AD3"
-                    d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"
-                  ></path>
-                  <path
-                    fill="#03599C"
-                    d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"
-                  ></path>
-                  <path
-                    fill="#fff"
-                    d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"
-                  ></path>
-                </svg> */}
-                {/* <p className="text-lg">C</p> */}
+
+
+              <div className="tech">
+        
                 <p className="text-lg">Next.js</p>
               </div>
-            </div>
-            <div className="z3c">
-              <div className="tech-container">
+
+
+
+              <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <path
                     fill="#F34F29"
@@ -414,54 +167,15 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">Github</p>
               </div>
-            </div>
-            <div className="z3d">
-              <div className="tech-container">
-                {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
-                  <defs>
-                    <linearGradient
-                      id="jira-original-a"
-                      gradientUnits="userSpaceOnUse"
-                      x1="22.034"
-                      y1="9.773"
-                      x2="17.118"
-                      y2="14.842"
-                      gradientTransform="scale(4)"
-                    >
-                      <stop offset=".176" stopColor="#0052cc"></stop>
-                      <stop offset="1" stopColor="#2684ff"></stop>
-                    </linearGradient>
-                    <linearGradient
-                      id="jira-original-b"
-                      gradientUnits="userSpaceOnUse"
-                      x1="16.641"
-                      y1="15.564"
-                      x2="10.957"
-                      y2="21.094"
-                      gradientTransform="scale(4)"
-                    >
-                      <stop offset=".176" stopColor="#0052cc"></stop>
-                      <stop offset="1" stopColor="#2684ff"></stop>
-                    </linearGradient>
-                  </defs>
-                  <path
-                    d="M108.023 16H61.805c0 11.52 9.324 20.848 20.847 20.848h8.5v8.226c0 11.52 9.328 20.848 20.848 20.848V19.977A3.98 3.98 0 00108.023 16zm0 0"
-                    fill="#2684ff"
-                  ></path>
-                  <path
-                    d="M85.121 39.04H38.902c0 11.519 9.325 20.847 20.844 20.847h8.504v8.226c0 11.52 9.328 20.848 20.848 20.848V43.016a3.983 3.983 0 00-3.977-3.977zm0 0"
-                    fill="url(#jira-original-a)"
-                  ></path>
-                  <path
-                    d="M62.219 62.078H16c0 11.524 9.324 20.848 20.848 20.848h8.5v8.23c0 11.52 9.328 20.844 20.847 20.844V66.059a3.984 3.984 0 00-3.976-3.98zm0 0"
-                    fill="url(#jira-original-b)"
-                  ></path>
-                </svg> */}
+
+
+              <div className="tech">
+        
                 <p className="text-lg">Jira</p>
               </div>
-            </div>
-            <div className="z3e">
-              <div className="tech-container">
+
+
+              <div className="tech">
                 {/* <svg viewBox="0 0 128 128">
                   <path
                     d="M66.332 70.032c.24-4.242 2.327-7.987 5.485-10.634 3.094-2.602 7.248-4.193 11.809-4.193 4.537 0 8.69 1.59 11.78 4.193 3.163 2.647 5.237 6.392 5.485 10.634.24 4.35-1.523 8.41-4.605 11.417-3.158 3.05-7.627 4.977-12.66 4.977-5.037 0-9.526-1.915-12.664-4.977-3.094-3.006-4.853-7.044-4.606-11.397zm0 0"
@@ -474,31 +188,14 @@ const Stack = () => {
                 </svg> */}
                 <p className="text-lg">Blender</p>
               </div>
-            </div>
-            <div className="z3f">
-              {/* <div className="tech-container">
-                <p className="text-lg">Pega</p>
-              </div> */}
-              <div className="tech-container">
+
+              <div className="tech">
                 <p className="text-lg">Pega</p>
               </div>
-            </div>
-          </div>
+
         </div>
-
-        {/* <div className="flex gap-4 items-center">
-        </div> 
-
-    
-        <div className="flex gap-4 items-center">  
-        </div>
-
-
-        <div className="flex gap-4 items-center">
-        </div> */}
-      </section>
     </>
-  );
-};
+)
+}
 
-export default Stack;
+export default Stack2

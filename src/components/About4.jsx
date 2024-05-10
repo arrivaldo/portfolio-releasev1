@@ -147,7 +147,7 @@ const About4 = () => {
               <div className="" style={{ padding: "2px" }}>
                 <div
                   style={{}}
-                  className="relative bgColor rounded-[inherit]  overflow-visible"
+                  className="relative bgColor rounded-[inherit] h-full  overflow-visible"
                 >
                   <div className="group low1">
                     {/* <Stack /> */}

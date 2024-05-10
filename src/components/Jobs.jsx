@@ -92,10 +92,12 @@ const Jobs = () => {
             {/* 
              */}
         </ul>
-        {/* <div style={{background: 'gray', marginTop: '5%', padding: '2%'}} className='w-full'>
-        <a style={{ width: '100%'}}>Resume</a>
+        <div style={{marginTop: '5%', padding: '2%'}} className='w-full flex justify-between gap-5'>
+        <a className='text-xl' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>Get Resume</a>
+        <a className='text-xl' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>Send Email</a>
 
-        </div> */}
+
+        </div>
 
 
 
