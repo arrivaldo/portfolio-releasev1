@@ -73,9 +73,9 @@
     
   }
   
-  .upper12 { grid-area: upper12;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; }
+  .upper12 { grid-area: upper12;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; height: 100%; }
   
-  .upper22 { grid-area: upper22;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem;}
+  .upper22 { grid-area: upper22;  border: 1px solid #c1c1c159; padding: 5%; border-radius: 1rem; height: 100%;}
   
   .bottom1 {
     display: grid; 
@@ -86,11 +86,11 @@
       "low1 low2"; 
     grid-area: bottom1; 
     align-items: stretch; /* Ensures both cells stretch to the same height */
-
  
   }
-  .low1 { grid-area: low1;  border: 1px solid #c1c1c159; padding: 2%; border-radius: 1rem; height: 100%; }
-  .low2 { grid-area: low2; padding: 5%; border-radius: 1rem;    }
+  .low1 { grid-area: low1;  border: 1px solid #c1c1c159; padding: 2%; border-radius: 1rem; overflow: hidden;     height: 350px;
+  }
+  .low2 { grid-area: low2;  padding: 5%; border-radius: 1rem;    }
 
 
 
@@ -111,7 +111,7 @@
   @media screen and (min-width: 320px) and (max-width: 399px) {
 
     .p-about {
-      padding: 0 33%;
+      padding: 0 5%;
     }
 
     .layer {
@@ -151,6 +151,7 @@
       "low2"
     }
 
+    .low1 { height: auto; }
 
     
   }
@@ -160,7 +161,7 @@
   @media screen and (min-width: 400px) and (max-width: 500px) {
 
     .p-about {
-      padding: 0 33%;
+      padding: 0 5%;
     }
 
     .layer {
@@ -190,6 +191,10 @@
     .upper11, .upper21, .upper12, .upper22, .low1, .low2 {
       grid-area: content; /* Ensure all items occupy the 'content' area */ 
     }
+    
+    .low1 { height: auto; }
+
+
   }
   
 

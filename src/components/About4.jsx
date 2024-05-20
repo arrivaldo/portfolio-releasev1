@@ -17,22 +17,6 @@ const About4 = () => {
     }
   }, []);
 
-  const spotlightRef2 = useRef(null);
-
-  useEffect(() => {
-    if (spotlightRef2.current) {
-      new Spotlight(spotlightRef2.current);
-    }
-  }, []);
-
-  const spotlightRef3 = useRef(null);
-
-  useEffect(() => {
-    if (spotlightRef3.current) {
-      new Spotlight(spotlightRef3.current);
-    }
-  }, []);
-
   return (
     <>
       <section className="p-about" style={{ marginTop: "6%" }}>
@@ -72,10 +56,7 @@ const About4 = () => {
                 </div>
               </div>
             </div>
-            <div
-              // ref={spotlightRef2}
-              className="upper-cont2"
-            >
+            <div className="upper-cont2">
               <div className="" style={{ padding: "2px" }}>
                 <div
                   style={{}}
@@ -139,19 +120,14 @@ const About4 = () => {
             </div>
           </div>
 
-          <div>
-            <div
-              // ref={spotlightRef3}
-              className="bottom1"
-            >
+          {/* <div>
+            <div className="bottom1">
               <div className="" style={{ padding: "2px" }}>
                 <div
                   style={{}}
                   className="relative bgColor rounded-[inherit] h-full  overflow-visible"
                 >
                   <div className="group low1">
-                    {/* <Stack /> */}
-                    {/* <Tabs /> */}
                     <Tabs2 />
                   </div>
                 </div>
@@ -175,7 +151,17 @@ const About4 = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+
+
+
+            <div className="flex items-center w-full gap-4 h-3/4 mobile:flex-col">
+              <div className="h-full" style={{ flex: '1.5',  borderRadius: '0.5rem', border: '1px solid #c1c1c159', overflowY: 'scroll'}}><Tabs2/></div>
+              <div className="h-full flex items-center " style={{flex: '0.5', borderRadius: '0.5rem', border: '1px solid #c1c1c159 '}}><CountUpStats /></div>
+
+            </div>
+
+
         </div>
       </section>
     </>

@@ -68,7 +68,7 @@
   grid-column: 6 / -1;
   grid-row: 1 / -1;
   height: 252px;
-  width: 600px;
+  width: 800px;
 }
 
 .project-img:hover{
@@ -133,7 +133,7 @@
 
   
 .p-featured {
-  padding: 0 33%;
+  padding: 0 5%;
 }
 
 }

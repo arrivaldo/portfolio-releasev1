@@ -1,5 +1,9 @@
 import React from 'react'
 import { FiBookOpen } from "react-icons/fi";
+import { FaFilePdf } from "react-icons/fa";
+import { PiFilePdf } from "react-icons/pi";
+import { PiFilePdfBold } from "react-icons/pi";
+import { FaRegEnvelope } from "react-icons/fa";
 
 
 const Jobs = () => {
@@ -93,8 +97,16 @@ const Jobs = () => {
              */}
         </ul>
         <div style={{marginTop: '5%', padding: '2%'}} className='w-full flex justify-between gap-5'>
-        <a className='text-xl' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>Get Resume</a>
-        <a className='text-xl' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>Send Email</a>
+        <a className='text-xl gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
+        <PiFilePdfBold />
+
+            Get Resume
+        </a>
+        <a className='text-xl gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
+        <FaRegEnvelope />
+
+            Send Email
+            </a>
 
 
         </div>

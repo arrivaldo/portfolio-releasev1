@@ -137,11 +137,43 @@ const Home = () => {
         </div>
       </div>
         </div>
-        <img
+        {/* <img
           style={{ objectFit: "cover", width: "35%" }}
           src="/images/wolf.webp"
-        ></img>
+        ></img> */}
         {/* <video autoPlay loop style={{top: '0%', left: '0', padding: '0 27.5%', zIndex: '0', scale: '1.2'}} className="absolute" src="/astro1.mp4"></video> */}
+        {/* <video src="/hologram2.mp4" 
+          type="video/mp4"
+          id="myVideo"
+          autoPlay
+          loop
+          muted
+          style={{scale: '1', width: '50%'}}
+          className="relative"
+        ></video> */}
+
+
+<video src="/hologram21.mp4" 
+          type="video/mp4"
+          id="myVideo"
+          autoPlay
+          loop
+          muted
+          // style={{scale: '1', width: '39%'}}
+          className="relative home-video"
+        ></video>
+   
+
+{/* 
+      <video src="/hologram22.webm" 
+          type="video/mp4"
+          id="myVideo"
+          autoPlay
+          loop
+          muted
+          style={{scale: '1', width: '39%'}}
+          className="relative"
+        ></video> */}
       </div>
 
 

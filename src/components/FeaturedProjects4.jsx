@@ -124,7 +124,7 @@ const FeaturedProjects4 = () => {
                   color: "rgb(141, 147, 160)",
                   border: "1px solid #c1c1c194",
                 }}
-                className={` ${parrafClass}`}
+                className={`text-xl ${parrafClass}`}
               >
                 {project.description}
               </p>

@@ -5,9 +5,9 @@ import useMeasure from "react-use-measure";
 
 const BasicFAQ = () => {
   return (
-    <div className="px-4 py-12 overflow-y-scroll">
+    <div className="py-4 ">
       <div className="mx-auto max-w-3xl">
-        <h3 className="mb-4 text-center text-3xl font-semibold">
+        <h3 className="mb-4 text-left text-xl font-semibold">
           Frequently asked questions
         </h3>
         <Question title="Why is the sky blue?" defaultOpen>

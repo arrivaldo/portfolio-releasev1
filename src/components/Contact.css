@@ -8,7 +8,7 @@
   @media screen and (min-width: 320px) and (max-width: 500px) { 
     /* CSS rules for devices with widths between 321 pixels and 768 pixels */
     .p-contact{
-        padding: 5% 33%;
+        padding: 5% 5%;
       }
   }
 

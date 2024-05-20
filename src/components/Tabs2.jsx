@@ -15,9 +15,9 @@ const Tabs2 = () => {
 
   return (
     <>
-      <div className="w-full rounded-lg shadow">
+      <div className="w-full rounded-lg shadow overflow-hidden">
         <ul
-          className="flex justify-between flex-wrap text-lg font-medium text-center text-gray-200 border-b border-gray-200 rounded-t-lg"
+          className="flex justify-between text-lg font-medium text-center text-gray-200 border-b border-gray-200 rounded-t-lg"
           id="defaultTab"
           role="tablist"
         >
@@ -33,7 +33,7 @@ const Tabs2 = () => {
                 activeTab === "about" && "bg-[#20157140] dark:bg-gr"
               }`}
             >
-              About
+              Stack
             </button>
           </li>
           <li className="me-2 flex-1">
@@ -48,7 +48,7 @@ const Tabs2 = () => {
                 activeTab === "services" && "bg-[#20157140]"
               }`}
             >
-              Services
+              Certifications
             </button>
           </li>
           <li className="me-2 flex-1">
@@ -63,18 +63,19 @@ const Tabs2 = () => {
                 activeTab === "statistics" && "bg-gray-500 "
               }`}
             >
-              Facts
+              Faqs
             </button>
           </li>
         </ul>
         <div id="defaultTabContent">
           <div
-            className={`pt-4 bg-transparent rounded-lg md:p-8 ${
+            className={` pt-4 overflow-hidden bg-transparent rounded-lg md:p-8 ${
               activeTab !== "about" && "hidden"
             }`}
             id="about"
             role="tabpanel"
             aria-labelledby="about-tab"
+            // style={{height: '300px'}}
           >
             {/* About content */}
 
@@ -96,7 +97,7 @@ const Tabs2 = () => {
             <Certifications2 />
           </div>
           <div
-            className={`p-4 rounded-lg md:p-8 ${
+            className={`p-4 rounded-lg md:p-8 overflow-hidden h ${
               activeTab !== "statistics" && "hidden"
             }`}
             id="statistics"

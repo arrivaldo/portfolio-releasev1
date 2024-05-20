@@ -1,6 +1,6 @@
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust column width */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Automatically adjust column width */
   grid-template-rows: auto; /* Auto-sized rows */
   gap: 25px 25px;
   grid-auto-flow: row;
@@ -28,7 +28,7 @@
   /* CSS rules for devices with widths between 321 pixels and 768 pixels */
   .services-container {
     grid-template-columns: 1fr; /* Single column layout on smaller screens */
-    padding: 0 33%;
+    padding: 0 0%;
   }
 
   .p-title-services {

@@ -32,6 +32,7 @@ import Services2 from "./components/Services2";
 import Testimonials3 from "./components/Testimonials3";
 import Testimonials4 from "./components/Testimonials4";
 import Tabs from "./components/Tabs";
+import GridExample from "./components/GridExample";
 
 function App() {
   return (
@@ -41,17 +42,23 @@ function App() {
       <div className="absolute left-0 top-0 z-[-1] h-screen w-screen gradient-bg"></div>
       {/* <Navbar /> */}
       {/* <Navbar2 /> */}
+{/* <div className="absolute left-0 top-0">
+  <img src="/images/circuit.png"></img>
+  <img src="/images/circuit.png"></img>
 
+</div> */}
       <div className="cont">
         <div className="content">
+        <CodeBeams2 /> 
+
           <Home />
           {/* <Bento /> */}
           <Clients />
 
           {/* <About4 /> */}
 
-          {/* <Services /> */}
-          <Services2 />
+          <Services />
+          {/* <Services2 /> */}
           
 
           {/* <FeaturedProjects /> */}
@@ -59,9 +66,9 @@ function App() {
           {/* <FeaturedProjects3 /> */}
 
           <FeaturedProjects4 />
+          {/* <GridExample /> */}
 
           {/* <CodeBeams /> */}
-          <CodeBeams2 /> 
           {/* <Bento2 /> */}
 
           {/* <About /> */}

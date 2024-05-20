@@ -4,7 +4,7 @@ import './Stacks2.css'
 const Stack2 = () => {
   return (
     <>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 justify-center items-center">
               <div className="tech">
                 {/* <svg style={{ width: "50%" }} viewBox="0 0 128 128">
                   <path

@@ -63,7 +63,8 @@ const Clients = () => {
           display: "flex",
           justifyContent: "flex-start",
           fontWeight: "600",
-          marginBottom: '2%'
+          marginBottom: '2%',
+          marginTop: '5%'
         }}
       >
         {" "}
