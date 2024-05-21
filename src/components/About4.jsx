@@ -156,7 +156,7 @@ const About4 = () => {
 
 
 
-            <div className="flex items-center w-full gap-4 h-3/4 mobile:flex-col">
+            <div className="flex items-center w-full gap-4 h-3/4 mobile:flex-col-reverse mobile:h-full ">
               <div className="h-full" style={{ flex: '1.5',  borderRadius: '0.5rem', border: '1px solid #c1c1c159'}}>
                 {/* <Tabs2/> */}
                     <Tabs3 />
