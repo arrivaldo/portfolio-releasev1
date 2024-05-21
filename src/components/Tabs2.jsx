@@ -67,7 +67,7 @@ const Tabs2 = () => {
             </button>
           </li>
         </ul>
-        <div id="defaultTabContent">
+        <div id="defaultTabContent" className="overflow-y-scroll">
           <div
             className={` pt-4 overflow-hidden bg-transparent rounded-lg md:p-8 ${
               activeTab !== "about" && "hidden"

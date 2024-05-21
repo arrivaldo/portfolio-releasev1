@@ -7,6 +7,7 @@ import Stack from "./Stack";
 import CountUpStats from "./CountUpStats";
 import Tabs from "./Tabs";
 import Tabs2 from "./Tabs2";
+import Tabs3 from "./Tabs3";
 
 const About4 = () => {
   const spotlightRef = useRef(null);
@@ -156,7 +157,10 @@ const About4 = () => {
 
 
             <div className="flex items-center w-full gap-4 h-3/4 mobile:flex-col">
-              <div className="h-full" style={{ flex: '1.5',  borderRadius: '0.5rem', border: '1px solid #c1c1c159', overflowY: 'scroll'}}><Tabs2/></div>
+              <div className="h-full" style={{ flex: '1.5',  borderRadius: '0.5rem', border: '1px solid #c1c1c159'}}>
+                {/* <Tabs2/> */}
+                    <Tabs3 />
+                </div>
               <div className="h-full flex items-center " style={{flex: '0.5', borderRadius: '0.5rem', border: '1px solid #c1c1c159 '}}><CountUpStats /></div>
 
             </div>

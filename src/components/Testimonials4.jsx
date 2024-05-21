@@ -113,7 +113,7 @@ const Testimonials4 = () => {
         </div>
 
         <div
-          style={{ width: "80%", marginLeft: "10%" }}
+          style={{ width: "84%", marginLeft: "8%" }}
           className="flex justify-center w-full flex-col items-center"
         >
           <p

@@ -1,0 +1,44 @@
+.wrap {
+    /* width: 80%;
+    margin: 0 auto; */
+    padding: 2%;
+  }
+  
+  .tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .tabs li {
+    margin: 0;
+  }
+  
+  .tabs button {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .tabs button.active, .tabs button:hover {
+    border-color: #ccc;
+    border-bottom-color: white;
+  }
+  
+  #contentTab {
+    /* margin-top: 20px; */
+    max-height: 300px;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
