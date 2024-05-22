@@ -23,7 +23,7 @@ const Home = () => {
       //     padding: "0% 6%",
       //     marginTop: "2%",
       //  }}
-        className="padding-home flex w-full justify-between items-center mobile:flex-col "
+        className="padding-home flex w-full justify-between items-center mobile:flex-col mobileBig:flex-col "
       >
         <div
           style={{
@@ -31,11 +31,11 @@ const Home = () => {
           }}
           className="mainText flex flex-col justify-center "
         >
-          <h3 className="text-xl mobile:text-lg " style={{ color: "#b7bfd0" }}>
+          <h3 className="text-xl mobile:text-lg  mobileBig:text-lg " style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-4xl leading-relaxed mobile:text-[1.7rem]"
+            className="text-4xl leading-relaxed mobile:text-[1.7rem] mobileBig:text-[1.7rem]"
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
@@ -45,7 +45,7 @@ const Home = () => {
           </h2>
 
           <p
-            className="text-xl leading-relaxed mobile:text-lg"
+            className="text-xl leading-relaxed mobile:text-lg  mobileBig:text-lg mobile:leading-7 mobileBig:leading-7"
             style={{
               opacity: "0.8",
               filter: "brightness(1.3)",

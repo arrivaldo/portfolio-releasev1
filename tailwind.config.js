@@ -6,10 +6,11 @@ export default {
   ],
   theme: {
     screens: {
-      'mobile': {'min': '320px', 'max': '500px'},
+      'mobile': {'min': '320px', 'max': '399px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
+      'mobileBig': {'min': '400px', 'max': '500px'},
 
-      'tablet': {'min': '768px', 'max': '1023px'},
+      'tablet': {'min': '501px', 'max': '819px'},
       // => @media (min-width: 768px and max-width: 1023px) { ... }
 
       'desktop': {'min': '1024px', 'max': '1279px'},

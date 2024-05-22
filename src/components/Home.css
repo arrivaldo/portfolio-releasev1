@@ -16,8 +16,11 @@
   width: 39%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) { 
-  /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+
+
+
+    @media screen and (min-width: 320px) and (max-width: 399px) {
+      /* CSS rules for devices with widths between 321 pixels and 768 pixels */
   .p-midHome{
       padding: 5% 5%;
     }
@@ -34,6 +37,26 @@
    .home-video {
     width: 80%;
   }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+
+  .p-midHome{
+    padding: 5% 22%;
+  }
+
+ .padding-home {
+  padding: 0 22%;
+  margin-top: 10%;
+ } 
+
+ .mainText {
+  width: 100%;
+ }
+
+ .home-video {
+  width: 80%;
+}
 }
 
 
