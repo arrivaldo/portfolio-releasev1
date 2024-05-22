@@ -52,6 +52,10 @@
     #contentTab {
       max-height: 420px;
     }
+    .wrap {
+      height: 420px;
+      overflow-y: scroll;
+    }
 
   }
 
