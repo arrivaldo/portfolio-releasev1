@@ -76,11 +76,11 @@ const Clients = () => {
         className="text-xl font-bold falseBody overflow-x-hidden"
       >
         <div className="scroller overflow-x-hidden" data-speed="slow">
-          <ul ref={spotlightRef} className="tag-list scroller__inner overflow-x-hidden">
+          <ul ref={spotlightRef} className="tag-list scroller__inner overflow-x-hidden mobileBig:text-lg">
             <div className="overflow-x-hidden" style={{ padding: "2px",borderRadius: '5px'}}>
               <div
                 style={{ background: "rgb(8 8 47)",borderRadius: '5px' }}
-                className="relative h-full overflow-x-hidden"
+                className="relative h-full overflow-x-hidden "
               >
                 <li className="overflow-x-hidden" style={{borderRadius: '5px'}}>
                   {/* 

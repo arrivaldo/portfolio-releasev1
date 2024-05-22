@@ -35,7 +35,7 @@ const Home = () => {
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-4xl leading-relaxed mobile:text-[1.65rem] "
+            className="text-4xl leading-relaxed mobile:text-[1.65rem] mobileBig:text-[1.8rem] "
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
@@ -45,7 +45,7 @@ const Home = () => {
           </h2>
 
           <p
-            className="text-xl leading-relaxed mobile:text-lg  mobileBig:text-lg mobile:leading-7 mobileBig:leading-7"
+            className="text-xl leading-relaxed mobile:text-lg  mobileBig:text-xl mobile:leading-7 mobileBig:leading-7"
             style={{
               opacity: "0.8",
               filter: "brightness(1.3)",

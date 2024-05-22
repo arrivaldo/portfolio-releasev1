@@ -94,11 +94,20 @@
     padding: 0 6%;
   }
 
-  
-  @media screen and (min-width: 320px) and (max-width: 500px) { 
-    /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+
+  @media screen and (min-width: 320px) and (max-width: 399px) {
     .p-title-clients {
       padding: 0 5%;
+    }
+    .tag-list li {
+      padding: 0.5rem;
+  }
+
+  }
+    @media screen and (min-width: 400px) and (max-width: 500px) {
+      /* CSS rules for devices with widths between 321 pixels and 768 pixels */
+    .p-title-clients {
+      padding: 0 20%;
     }
     .tag-list li {
       padding: 0.5rem;
