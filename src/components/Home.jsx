@@ -31,11 +31,11 @@ const Home = () => {
           }}
           className="mainText flex flex-col justify-center "
         >
-          <h3 className="text-xl" style={{ color: "#b7bfd0" }}>
+          <h3 className="text-xl mobile:text-lg " style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-4xl leading-relaxed"
+            className="text-4xl leading-relaxed mobile:text-[1.7rem]"
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
@@ -45,7 +45,7 @@ const Home = () => {
           </h2>
 
           <p
-            className="text-xl leading-relaxed"
+            className="text-xl leading-relaxed mobile:text-lg"
             style={{
               opacity: "0.8",
               filter: "brightness(1.3)",
@@ -89,7 +89,7 @@ const Home = () => {
                 borderRadius: "5px",
               }}
               type="button"
-              className="text-md flex items-center gap-2 p-1 px-4 "
+              className="text-md flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
             >
               <FaLinkedinIn />
               LinkedIn
@@ -108,7 +108,7 @@ const Home = () => {
                 borderRadius: "5px",
               }}
               type="button"
-              className="text-md flex items-center gap-2 p-1  px-4"
+              className="text-md flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
             >
               <FiGithub />
               Github
@@ -128,7 +128,7 @@ const Home = () => {
                 borderRadius: "5px",
               }}
               type="button"
-              className="text-md flex items-center gap-2 p-1  px-4"
+              className="text-md flex items-center gap-2 p-1  px-4 mobile:px-[0.6rem]"
             >
               <IoIosContact />
               Contact
