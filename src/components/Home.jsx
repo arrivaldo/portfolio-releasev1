@@ -29,13 +29,13 @@ const Home = () => {
           style={{
      
           }}
-          className="mainText flex flex-col justify-center "
+          className= " mainText flex flex-col justify-center "
         >
           <h3 className="text-xl mobile:text-lg  mobileBig:text-lg " style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-4xl leading-relaxed mobile:text-[1.7rem] mobileBig:text-[1.7rem]"
+            className="text-4xl leading-relaxed mobile:text-[1.65rem] "
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
