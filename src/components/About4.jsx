@@ -156,12 +156,12 @@ const About4 = () => {
 
 
 
-            <div className="h-class flex items-center w-full gap-4  mobile:flex-col-reverse mobile:h-full mobile:gap-7 ">
+            <div className="h-class flex items-center w-full gap-4  mobile:flex-col-reverse mobile:h-full mobile:gap-7 mobileBig:flex-col-reverse mobileBig:h-full  mobileBig:gap-7  tinyTablet:flex-col-reverse tinyTablet:h-full  tinyTablet:gap-7 ">
               <div className="h-full" style={{ flex: '1.5',  borderRadius: '0.5rem', border: '1px solid #c1c1c159'}}>
                 {/* <Tabs2/> */}
                     <Tabs3 />
                 </div>
-              <div className="h-full flex items-center mobile:p-4 " style={{flex: '0.5', borderRadius: '0.5rem', border: '1px solid #c1c1c159 '}}>
+              <div className="h-full flex items-center mobile:p-4 mobileBig:p-4 tinyTablet:p-4" style={{flex: '0.5', borderRadius: '0.5rem', border: '1px solid #c1c1c159 '}}>
                 <CountUpStats />
                 </div>
 

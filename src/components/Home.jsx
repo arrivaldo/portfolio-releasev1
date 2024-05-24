@@ -23,7 +23,7 @@ const Home = () => {
       //     padding: "0% 6%",
       //     marginTop: "2%",
       //  }}
-        className="padding-home flex w-full justify-between items-center mobile:flex-col mobileBig:flex-col "
+        className="padding-home flex w-full justify-between items-center mobile:flex-col mobileBig:flex-col tablet:flex-col tinyTablet:flex-col "
       >
         <div
           style={{
@@ -31,11 +31,11 @@ const Home = () => {
           }}
           className= " mainText flex flex-col justify-center "
         >
-          <h3 className="text-xl mobile:text-lg  mobileBig:text-lg " style={{ color: "#b7bfd0" }}>
+          <h3 className="text-xl mobile:text-lg  mobileBig:text-lg tablet:text-lg " style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-4xl leading-relaxed mobile:text-[1.65rem] mobileBig:text-[1.8rem] "
+            className="text-4xl headWidth  leading-relaxed mobile:text-[1.6rem] mobileBig:text-[1.8rem] tablet:text-[2rem] tinyTablet:text-[1.8rem] bigTablet:text-[2rem] "
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
@@ -45,7 +45,7 @@ const Home = () => {
           </h2>
 
           <p
-            className="text-xl leading-relaxed mobile:text-lg  mobileBig:text-xl mobile:leading-7 mobileBig:leading-7"
+            className="text-xl leading-relaxed mobile:text-lg  mobileBig:text-[1.2rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
             style={{
               opacity: "0.8",
               filter: "brightness(1.3)",
@@ -62,14 +62,14 @@ const Home = () => {
             >
               project development&nbsp;
             </span>
-            and delivering&nbsp;
+            and&nbsp;
             <span
               style={{
                 color: "#ccedff",
                 filter: "brightness(0.8) contrast(2)",
               }}
             >
-              quality products.&nbsp;
+              quality engineering.&nbsp;
             </span>
           </p>
           
@@ -89,7 +89,7 @@ const Home = () => {
                 borderRadius: "5px",
               }}
               type="button"
-              className="text-md flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
+              className="text-md flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] mobileBig:px-[0.6rem] "
             >
               <FaLinkedinIn />
               LinkedIn

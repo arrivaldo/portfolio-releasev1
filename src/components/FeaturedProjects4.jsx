@@ -103,11 +103,23 @@ const FeaturedProjects4 = () => {
     if (window.matchMedia("(min-width: 320px) and (max-width: 500px)").matches) {
       projectClass = isEven ? "" : "flex-row";
       parrafClass = isEven ? "w-[100%]" : "w-[100%], ml-[0%]";
-      titleClass = isEven ? "" : "text-start";
+      titleClass = isEven ? "" : "text-f";
       itemsClass = isEven ? "" : "justify-start0";
 
 
     }
+
+
+    
+    if (window.matchMedia("(min-width: 501px) and (max-width: 640px)").matches) {
+      projectClass = isEven ? "" : "flex-row";
+      parrafClass = isEven ? "w-[100%]" : "w-[100%], ml-[0%]";
+      titleClass = isEven ? "" : "text-f";
+      itemsClass = isEven ? "" : "justify-start0";
+
+
+    }
+    
 
 
     return (
@@ -124,7 +136,7 @@ const FeaturedProjects4 = () => {
                   color: "rgb(141, 147, 160)",
                   border: "1px solid #c1c1c194",
                 }}
-                className={`text-xl ${parrafClass}`}
+                className={`text-xl mobile:text-lg mobileBig:text-lg tinyTablet:text-lg tablet:text-lg bigTablet:text-lg ${parrafClass}`}
               >
                 {project.description}
               </p>
@@ -163,7 +175,7 @@ const FeaturedProjects4 = () => {
 
   return (
     <>
-      <div className="p-featured" style={{ marginTop: "6%" }}>
+      <div className="p-featured" style={{}}>
         <h1
           className="text-xl"
           style={{

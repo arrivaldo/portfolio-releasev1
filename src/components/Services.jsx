@@ -15,7 +15,7 @@ const Services = () => {
 
   return (
     <>
-      <section id="services" style={{ padding: "0 6%", marginBottom: "6%", marginTop: '6%' }}>
+      <section id="services" style={{  marginBottom: "6%", marginTop: '6%' }}>
         <h1
           className="text-xl"
           style={{

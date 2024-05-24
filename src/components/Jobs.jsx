@@ -97,16 +97,18 @@ const Jobs = () => {
              */}
         </ul>
         <div style={{marginTop: '5%', padding: '2%'}} className='w-full flex justify-between gap-5'>
-        <a className='text-xl gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
+        <a className='text-lg gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
         <PiFilePdfBold />
 
-            Get Resume
+          <span className='mobile:hidden mobileBig:hidden tablet:hidden bigTablet:hidden'>Get Resume</span>  
+          <span className='hidden mobile:block mobileBig:block tablet:block bigTablet:block '>Resume</span>  
+
         </a>
-        <a className='text-xl gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
+        <a className='text-lg gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
         <FaRegEnvelope />
 
-            Send Email
-            </a>
+        <span className='mobile:hidden mobileBig:hidden tablet:hidden bigTablet:hidden'>Send Email</span>  
+          <span className='hidden mobile:block mobileBig:block tablet:block bigTablet:block '>Email</span>             </a>
 
 
         </div>
