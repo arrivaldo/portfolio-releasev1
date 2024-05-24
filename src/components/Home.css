@@ -94,9 +94,16 @@
 
  } 
 
- 
-.mainText {
-width: 80%;
+ .mainText {
+  width: 100%;
+}
+
+.headWidth{
+  width: 77%;
+}
+
+.subHead{
+  width: 95%;
 }
 
 
@@ -120,16 +127,24 @@ width: 80%;
  } 
 
  
-.mainText {
-width: 88%;
-}
 
 
 .home-video {
   width: 80%;
 }
-.headWidth {
-  width: 80%;
+
+
+
+.mainText {
+  width: 100%;
+}
+
+.headWidth{
+  width: 72%;
+}
+
+.subHead{
+  width: 90%;
 }
 
 }
@@ -142,12 +157,20 @@ width: 88%;
     }
 
    .padding-home {
-    padding: 0 1%;
+    padding: 0 16%;
    } 
 
    
 .mainText {
-  width: 50%;
+  width: 100%;
+}
+
+.headWidth{
+  width: 65%;
+}
+
+.subHead{
+  width: 70%;
 }
 }
 

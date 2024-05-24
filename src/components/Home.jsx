@@ -45,7 +45,7 @@ const Home = () => {
           </h2>
 
           <p
-            className="text-xl leading-relaxed mobile:text-lg  mobileBig:text-[1.2rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
+            className="text-xl subHead leading-relaxed mobile:text-lg  mobileBig:text-[1.2rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
             style={{
               opacity: "0.8",
               filter: "brightness(1.3)",

@@ -35,7 +35,9 @@ const Jobs = () => {
                         </p>
                     </div>
                     <div className="inline-flex text-xl items-center font-semibold ">
-                      2021-present  
+                      <span>2021-</span>  
+                      <span>Present</span>  
+
                     </div>
                 </div>
             </li>
@@ -46,14 +48,16 @@ const Jobs = () => {
                     </div>
                     <div className="flex-1 min-w-0 ms-4">
                         <p className="text-xl font-medium truncate ">
-                            Global Human Capital
+                            Global H.C.
                         </p>
                         <p className="text-lg  truncate ">
                             Frontend Developer
                         </p>
                     </div>
-                    <div className="inline-flex text-xl items-center font-semibold">
-                        2020
+                    <div className="inline-flex text-xl items-center font-semibold ">
+                      <span>2020-</span>  
+                      <span>2021</span>  
+
                     </div>
                 </div>
             </li>
@@ -67,11 +71,13 @@ const Jobs = () => {
                             Neoris
                         </p>
                         <p className="text-lg  truncate ">
-                            Full Stack Developer Jr.
+                            Full Stack Developer
                         </p>
                     </div>
-                    <div className="inline-flex text-xl items-center font-semibold">
-                        2020
+                    <div className="inline-flex text-xl items-center font-semibold ">
+                      <span>2019-</span>  
+                      <span>2020</span>  
+
                     </div>
                 </div>
             </li>
@@ -88,8 +94,10 @@ const Jobs = () => {
                             IT Consultant
                         </p>
                     </div>
-                    <div className="inline-flex text-xl items-center  font-semibold ">
-                        2019
+                    <div className="inline-flex text-xl items-center font-semibold ">
+                      <span>2018-</span>  
+                      <span>2019</span>  
+
                     </div>
                 </div>
             </li>
