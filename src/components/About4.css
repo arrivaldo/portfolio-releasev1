@@ -245,7 +245,9 @@
     padding: 0 16%;
   }
 
-
+  .h-class {
+    height: 82%;
+  }
 }
 
 @media screen and (min-width: 716px) and (max-width: 819px) { 
