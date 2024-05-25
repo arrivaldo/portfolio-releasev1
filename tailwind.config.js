@@ -7,8 +7,8 @@ export default {
   theme: {
     screens: {
 
-      
-      'mobile': {'min': '320px', 'max': '399px'},
+      'tinyMobile': {'min': '320px', 'max': '355px'},
+      'mobile': {'min': '356px', 'max': '399px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
       'mobileBig': {'min': '400px', 'max': '500px'},
       'tinyTablet': {'min': '501px', 'max': '640px'},

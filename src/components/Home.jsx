@@ -23,7 +23,7 @@ const Home = () => {
       //     padding: "0% 6%",
       //     marginTop: "2%",
       //  }}
-        className="padding-home flex w-full justify-between items-center mobile:flex-col mobileBig:flex-col tablet:flex-col tinyTablet:flex-col "
+        className="padding-home flex w-full justify-between items-center tinyMobile:flex-col mobile:flex-col mobileBig:flex-col tablet:flex-col tinyTablet:flex-col "
       >
         <div
           style={{
@@ -31,11 +31,11 @@ const Home = () => {
           }}
           className= " mainText flex flex-col justify-center "
         >
-          <h3 className="text-xl mobile:text-[1rem] mobileBig:text-[1rem]   mobileBig:text-lg tablet:text-lg " style={{ color: "#b7bfd0" }}>
+          <h3 className="text-xl tinyMobile:text-[0.9rem] mobile:text-[1rem] mobileBig:text-[1rem]   mobileBig:text-lg tablet:text-lg " style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-[2.1rem] headWidth  leading-relaxed mobile:text-[1.5rem] mobileBig:text-[1.5em] tablet:text-[2rem] tinyTablet:text-[1.8rem] bigTablet:text-[2rem] "
+            className="text-[2.1rem] headWidth  leading-relaxed tinyMobile:text-[1.4rem] mobile:text-[1.5rem] mobileBig:text-[1.5em] tablet:text-[2rem] tinyTablet:text-[1.8rem] bigTablet:text-[2rem] "
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
@@ -45,7 +45,7 @@ const Home = () => {
           </h2>
 
           <p
-            className="text-xl subHead leading-relaxed mobile:text-[1rem]   mobileBig:text-[1rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
+            className="text-xl subHead leading-relaxed tinyMobile:text-[0.9rem] mobile:text-[1rem]   mobileBig:text-[1rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
             style={{
               opacity: "0.8",
               filter: "brightness(1.3)",
@@ -89,7 +89,7 @@ const Home = () => {
                 // borderRadius: "5px",
               }}
               type="button"
-              className=" text-[1.05rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] mobileBig:px-[0.6rem] "
+              className=" text-[1.05rem] tinyMobile:text-[0.8rem] tinyMobile:px-1 mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] mobileBig:px-[0.6rem] "
             >
               <FaLinkedinIn />
               LinkedIn
@@ -108,7 +108,7 @@ const Home = () => {
                 // borderRadius: "5px",
               }}
               type="button"
-              className="text-[1.05rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
+              className="text-[1.05rem] tinyMobile:text-[0.8rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
             >
               <FiGithub />
               Github
@@ -128,7 +128,7 @@ const Home = () => {
                 // borderRadius: "5px",
               }}
               type="button"
-              className="text-[1.05rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1  px-4 mobile:px-[0.6rem]"
+              className="text-[1.05rem] tinyMobile:text-[0.8rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1  px-4 mobile:px-[0.6rem]"
             >
               <IoIosContact />
               Contact
@@ -188,7 +188,7 @@ const Home = () => {
 
         <div className="p-midHome">
           <h2
-            className="text-xl mobile:text-[1.05rem] mobileBig:text-[1.05rem]"
+            className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem]"
             style={{ fontWeight: "600", marginBottom: "4%" }}
           >
             {/* We're a Design Studio based in Querétaro, México, offering
@@ -201,7 +201,7 @@ const Home = () => {
             {/* <img className="w-50 h-60" src="/images/erick3.png"></img> */}
             <div>
               <p
-                className="text-xl mobile:text-[1.05rem]  mobileBig:text-[1.05rem] leading-normal"
+                className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem]  mobileBig:text-[1.05rem] leading-normal"
                 style={{
                   filter: "brightness(1.3)",
                   color: "#8d93a0",
@@ -229,7 +229,7 @@ const Home = () => {
               <br />
 
               <p
-                className="text-xl mobile:text-[1.05rem]  mobileBig:text-[1.05rem] leading-normal"
+                className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem]  mobileBig:text-[1.05rem] leading-normal"
                 style={{
                   // fontSize: "1.2rem",
                   filter: "brightness(1.3)",

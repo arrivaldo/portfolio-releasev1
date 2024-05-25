@@ -10,10 +10,10 @@ const Profile = () => {
 
     <div className="flex flex-col w-full leading-1.5">
         <div className="flex items-center space-x-2 rtl:space-x-reverse">
-            <span className="text-xl mobile:text-[1.05rem] font-semibold ">Erick Bárcena</span>
-            <span className="text-lg mobile:text-[1.05rem] font-normal">11:46</span>
+            <span className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] font-semibold ">Erick Bárcena</span>
+            <span className="text-lg tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] font-normal">11:46</span>
         </div>
-        <p className="text-lg mobile:text-[1.05rem] font-normal py-2"> That's awesome. I think our users will really appreciate.</p>
+        <p className="text-lg tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] font-normal py-2"> That's awesome. I think our users will really appreciate.</p>
         {/* <span className="text-lg font-normal ">Delivered</span> */}
     </div>
 </div>

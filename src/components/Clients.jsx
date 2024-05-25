@@ -54,7 +54,7 @@ const Clients = () => {
       >
 
       <h1
-        className="p-title-clients text-xl mobile:text-[1.05rem]  mobileBig:text-[1.05rem]"
+        className="p-title-clients text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem]  mobileBig:text-[1.05rem]"
         style={{
           width: "100%",
           color: "#e3e3e3",
@@ -73,7 +73,7 @@ const Clients = () => {
 
       <div
         style={{ position: "relative"}}
-        className="text-xl mobile:text-[0.9rem]  mobileBig:text-[0.9rem] font-bold falseBody overflow-x-hidden"
+        className="text-xl tinyMobile:text-[0.9rem] mobile:text-[0.9rem]  mobileBig:text-[0.9rem] font-bold falseBody overflow-x-hidden"
       >
         <div className="scroller overflow-x-hidden" data-speed="slow">
           <ul ref={spotlightRef} className="tag-list scroller__inner overflow-x-hidden mobileBig:text-lg">

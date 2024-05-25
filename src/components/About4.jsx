@@ -65,20 +65,20 @@ const About4 = () => {
                 >
                   <div className="group upper12">
                     <div className="flex flex-col">
-                      <h3 className="text-lg mobile:text-[0.9rem]">April 5, 2024</h3>
-                      <h2 className="text-xl mobile:text-[1.05rem] font-bold py-2">
+                      <h3 className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem]">April 5, 2024</h3>
+                      <h2 className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] font-bold py-2">
                         Crafting a design system for a multiplanetary
                       </h2>
-                      <ul className="text-lg mobile:text-[0.9rem] flex gap-4 pb-2 ">
+                      <ul className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex gap-4 pb-2 ">
                         <li>#Arquitecture</li>
                         <li>#Engineering</li>
                       </ul>
-                      <p className="text-lg mobile:text-[0.9rem] pb-2">
+                      <p className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] pb-2">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Iure eligendi fugiat vitae expedita deserunt
                         aliquam recusandae.
                       </p>
-                      <a className="text-lg mobile:text-[0.9rem] text-[#84cdeb]">Read article -</a>
+                      <a className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] text-[#84cdeb]">Read article -</a>
                     </div>
 
                     <button
@@ -96,20 +96,20 @@ const About4 = () => {
                 >
                   <div className="group upper22">
                     <div className="flex flex-col">
-                      <h3 className="text-lg mobile:text-[0.9rem]">April 5, 2024</h3>
-                      <h2 className="text-xl mobile:text-[1.05rem] font-bold py-2">
+                      <h3 className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem]">April 5, 2024</h3>
+                      <h2 className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] font-bold py-2">
                         Crafting a design system for a multiplanetary
                       </h2>
-                      <ul className="text-lg mobile:text-[0.9rem] flex gap-4 pb-2 ">
+                      <ul className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex gap-4 pb-2 ">
                         <li>#Arquitecture</li>
                         <li>#Engineering</li>
                       </ul>
-                      <p className="text-lg mobile:text-[0.9rem] pb-2">
+                      <p className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] pb-2">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Iure eligendi fugiat vitae expedita deserunt
                         aliquam recusandae.
                       </p>
-                      <a className="text-lg mobile:text-[0.9rem] text-[#84cdeb]">Read article -</a>
+                      <a className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] text-[#84cdeb]">Read article -</a>
                     </div>
                     <button
                       style={{ bottom: "-10px", height: "12px" }}
@@ -156,12 +156,12 @@ const About4 = () => {
 
 
 
-            <div className="h-class flex items-center w-full gap-4  mobile:flex-col-reverse mobile:h-full mobile:gap-7 mobileBig:flex-col-reverse mobileBig:h-full  mobileBig:gap-7  tinyTablet:flex-col-reverse tinyTablet:h-full  tinyTablet:gap-7 ">
+            <div className="h-class flex items-center w-full gap-4 tinyMobile:flex-col-reverse tinyMobile:h-full tinyMobile:gap-7  mobile:flex-col-reverse mobile:h-full mobile:gap-7 mobileBig:flex-col-reverse mobileBig:h-full  mobileBig:gap-7  tinyTablet:flex-col-reverse tinyTablet:h-full  tinyTablet:gap-7 ">
               <div className="h-full" style={{ flex: '1.5',  borderRadius: '0.5rem', border: '1px solid #c1c1c159'}}>
                 {/* <Tabs2/> */}
                     <Tabs3 />
                 </div>
-              <div className="h-full flex items-center mobile:p-4 mobileBig:p-4 tinyTablet:p-4" style={{flex: '0.5', borderRadius: '0.5rem', border: '1px solid #c1c1c159 '}}>
+              <div className="h-full flex items-center tinyMobile:p-4 mobile:p-4 mobileBig:p-4 tinyTablet:p-4" style={{flex: '0.5', borderRadius: '0.5rem', border: '1px solid #c1c1c159 '}}>
                 <CountUpStats />
                 </div>
 

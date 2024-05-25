@@ -24,7 +24,7 @@
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 399px) {
+@media screen and (min-width: 320px) and (max-width: 355px) {
     #testimonials-section {
         padding: 0 3%;
         margin-top: 25%;
@@ -34,6 +34,28 @@
 
     .quotes {
         margin-bottom: 8%;
+    }
+    .shift{ 
+        height: 280px;
+    }
+
+}    
+
+
+
+@media screen and (min-width: 356px) and (max-width: 399px) {
+    #testimonials-section {
+        padding: 0 3%;
+        margin-top: 25%;
+
+    }
+
+
+    .quotes {
+        margin-bottom: 8%;
+    }
+    .shift{ 
+        height: 220px;
     }
 
   }
@@ -52,6 +74,12 @@
     .quotes {
         margin-bottom: 8%;
     }
+
+    .shift{ 
+        height: 230px;
+    }
+
+
     }
   
   
@@ -66,6 +94,10 @@
     
         .quotes {
             margin-bottom: 8%;
+        }
+
+        .shift{ 
+            height: 240px;
         }
 
     }

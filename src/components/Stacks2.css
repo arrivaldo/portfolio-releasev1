@@ -38,7 +38,10 @@
     /* CSS rules for devices with widths between 321 pixels and 768 pixels */
   
     .tech {
-        width: 7.5em;
+        width: 7em;
+    }
+    .tech-cont {
+      gap: 0.5rem 0.7rem;
     }
 
   }

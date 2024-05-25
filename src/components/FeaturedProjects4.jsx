@@ -127,7 +127,7 @@ const FeaturedProjects4 = () => {
         <div className={`relative  project ${projectClass}`}>
           <div className="project-content">
             <div className={`mobile:text-[1rem] project-label ${titleClass}`}>Game of Thrones</div>
-            <h4 className={`text-3xl mobile:text-[1.5rem] project-title ${titleClass}`}>{project.title}</h4>
+            <h4 className={`text-3xl  tinyMobile:text-[1.5rem] mobile:text-[1.5rem] mobileBig:text-[1.5rem] project-title ${titleClass}`}>{project.title}</h4>
             <div className="group relative project-details">
               <p
                 style={{
@@ -136,7 +136,7 @@ const FeaturedProjects4 = () => {
                   color: "rgb(141, 147, 160)",
                   border: "1px solid #c1c1c194",
                 }}
-                className={`text-xl  mobile:text-[1rem] mobileBig:text-lg tinyTablet:text-lg tablet:text-lg bigTablet:text-lg ${parrafClass}`}
+                className={`text-xl tinyMobile:text-[1rem]  mobile:text-[1rem] mobileBig:text-lg tinyTablet:text-lg tablet:text-lg bigTablet:text-lg ${parrafClass}`}
               >
                 {project.description}
               </p>
@@ -177,7 +177,7 @@ const FeaturedProjects4 = () => {
     <>
       <div className="p-featured" style={{}}>
         <h1
-          className="text-xl mobile:text-[1.05rem]"
+          className="text-xl tinyMobile:text-[1.05rem]  mobile:text-[1.05rem] mobileBig:text-[1.05rem]"
           style={{
             width: "100%",
             color: "#fff",
@@ -195,7 +195,7 @@ const FeaturedProjects4 = () => {
         </div>
 
         <div className="flex flex-col mt-12 justify-center items-center ">
-          <h2 className="text-2xl mobile:text-[1.2rem] mb-4">View all projects</h2>
+          <h2 className="text-2xl tinyMobile:text-[1.2rem] mobile:text-[1.2rem] mobileBig:text-[1.2rem] mb-4">View all projects</h2>
 
           <svg
             width="30"

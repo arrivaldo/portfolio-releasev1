@@ -104,7 +104,7 @@ const Testimonials4 = () => {
 
       <div className="container-testimonial">
         <div className="section-title">
-          <h2 style={{ color: "#e3e3e3" }} className="text-3xl mobile:text-[1.5rem]">
+          <h2 style={{ color: "#e3e3e3" }} className="text-3xl tinyMobile:text-[1.5rem] mobile:text-[1.5rem] mobileBig:text-[1.5rem]">
             What they said <strong>about us</strong>
           </h2>
           <div className="flex justify-center w-full">
@@ -121,12 +121,12 @@ const Testimonials4 = () => {
               filter: "brightness(1.3)",
               color: "#8d93a0",
             }}
-            className="shift text-xl mobile:text-[1.05rem]"
+            className="shift text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem]"
           >
             {testimonials[currentIndex].info}
           </p>
-          <p style={{ color: "#e3e3e3" }} className="text-xl mobile:text-[1.05rem] mt-4">
-            <strong className="text-lg mobile:text-[0.9rem]">
+          <p style={{ color: "#e3e3e3" }} className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] mt-4">
+            <strong className="text-lg tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem]">
               {testimonials[currentIndex].name}
             </strong>
             , {testimonials[currentIndex].title}

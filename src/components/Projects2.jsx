@@ -225,7 +225,7 @@ const Link = ({ heading, imgSrc, subheading, href, items }) => {
         </div>
         <motion.span
  
-          className="relative z-10 block text-xl mobile:text-[1.05rem] font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 "
+          className="relative z-10 block text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 "
         >
             <motion.span
       
@@ -239,11 +239,11 @@ const Link = ({ heading, imgSrc, subheading, href, items }) => {
         <span style={{
                   filter: "brightness(1.3)",
                   color: "#8d93a0",
-                }}   className="relative z-10 mt-2 block text-base mobile:text-[0.9rem] text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+                }}   className="relative z-10 mt-2 block text-base tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
           {subheading}
         </span>
         <span style={{ marginTop: '7%', filter: "brightness(1.3)",
-                  color: "#8d93a0",  }} className="relative z-10 mt-2 block text-base mobile:text-[0.9rem] text-neutral-400 transition-colors duration-500 group-hover:text-neutral-50">
+                  color: "#8d93a0",  }} className="relative z-10 mt-2 block text-base tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] text-neutral-400 transition-colors duration-500 group-hover:text-neutral-50">
           {items}
         </span>
       </div>

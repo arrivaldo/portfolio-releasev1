@@ -17,7 +17,7 @@ const Services = () => {
     <>
       <section id="services" style={{  marginBottom: "6%", marginTop: '6%' }}>
         <h1
-          className="text-xl"
+          className="text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] bigMobile:text-[1.05rem]"
           style={{
             width: "100%",
             color: "#e3e3e3",
@@ -52,8 +52,8 @@ const Services = () => {
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
-                <h3 className="text-xl mobile:hidden mobile:text-[1.05rem]">Full Stack Dev</h3>
-                  <h3 className="hidden mobile:block text-xl mobile:text-[1.05rem]">Full Stack Developer</h3>                  {/* <svg
+                <h3 className="text-xl mobile:hidden tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem]">Full Stack Dev</h3>
+                  <h3 className="hidden mobile:block text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem]">Full Stack Developer</h3>                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"

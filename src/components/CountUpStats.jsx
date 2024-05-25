@@ -53,12 +53,12 @@ const Stat = ({ num, suffix, decimals = 0, subheading }) => {
   }, [num, decimals, isInView]);
 
   return (
-    <div className="flex  flex-col items-cente=  ">
-      <p className="mb-2 text-center text-4xl mobile:text-[2rem] font-semibold s">
+    <div className="flex  flex-col items-center ">
+      <p className="mb-2 text-center text-4xl tinyMobile:text-[2rem] mobile:text-[2rem] mobileBig:text-[2rem] font-semibold">
         <span ref={ref}></span>
         {suffix}
       </p>
-      <p className="max-w-48 text-center text-neutral-400 mobile:text-[0.9rem]">{subheading}</p>
+      <p className="max-w-48 text-center text-neutral-400 tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem]">{subheading}</p>
     </div>
   );
 };
