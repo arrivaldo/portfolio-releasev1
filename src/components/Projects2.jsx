@@ -20,7 +20,7 @@ const Projects2 = () => {
 
   return (
     <section className='p-proyects' style={{ marginTop: '10%' }}>
-      <h1 style={{ marginBottom: '3%', fontWeight: '600' }} className="text-2xl">Check out some of my work.</h1>
+      <h1 style={{ marginBottom: '3%', fontWeight: '600' }} className="text-xl mobile:text-[1.05rem]">Check out some of my work.</h1>
 
       <div ref={spotlightRef} className="mx-auto checkmate-container ">
 
@@ -225,7 +225,7 @@ const Link = ({ heading, imgSrc, subheading, href, items }) => {
         </div>
         <motion.span
  
-          className="relative z-10 block text-xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 "
+          className="relative z-10 block text-xl mobile:text-[1.05rem] font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 "
         >
             <motion.span
       
@@ -239,11 +239,11 @@ const Link = ({ heading, imgSrc, subheading, href, items }) => {
         <span style={{
                   filter: "brightness(1.3)",
                   color: "#8d93a0",
-                }}   className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+                }}   className="relative z-10 mt-2 block text-base mobile:text-[0.9rem] text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
           {subheading}
         </span>
         <span style={{ marginTop: '7%', filter: "brightness(1.3)",
-                  color: "#8d93a0",  }} className="relative z-10 mt-2 block text-base text-neutral-400 transition-colors duration-500 group-hover:text-neutral-50">
+                  color: "#8d93a0",  }} className="relative z-10 mt-2 block text-base mobile:text-[0.9rem] text-neutral-400 transition-colors duration-500 group-hover:text-neutral-50">
           {items}
         </span>
       </div>

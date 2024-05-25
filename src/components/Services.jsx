@@ -52,8 +52,8 @@ const Services = () => {
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
-                  <h3 className="text-xl">Full Stack Dev.</h3>
-                  {/* <svg
+                <h3 className="text-xl mobile:hidden mobile:text-[1.05rem]">Full Stack Dev</h3>
+                  <h3 className="hidden mobile:block text-xl mobile:text-[1.05rem]">Full Stack Developer</h3>                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
@@ -161,7 +161,8 @@ const Services = () => {
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
-                  <h3 className="text-xl">QA Analyst</h3>
+                <h3 className="text-xl mobile:hidden mobile:text-[1.05rem]">QA Analyst</h3>
+                  <h3 className="hidden mobile:block text-xl mobile:text-[1.05rem]">Quality Analyst</h3>
                 
                 </div>
 
@@ -250,8 +251,8 @@ const Services = () => {
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
-                  <h3 className="text-xl">B. Architect</h3>
-                  
+                <h3 className="text-xl mobile:hidden mobile:text-[1.05rem]">B. Architect</h3>
+                  <h3 className="hidden mobile:block text-xl mobile:text-[1.05rem]">Business Architect</h3>                   
                 </div>
 
                 {/* <h4 className="text-lg cursor-pointer text-[#84cdeb] ">Read More</h4>  */}
@@ -340,7 +341,9 @@ const Services = () => {
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
-                  <h3 className="text-xl">M. Engineer</h3>
+                  <h3 className="text-xl mobile:hidden mobile:text-[1.05rem]">M. Engineer</h3>
+                  <h3 className="hidden mobile:block text-xl mobile:text-[1.05rem]">Mechatronich Engineer</h3>
+
                  
                 </div>
 

@@ -126,8 +126,8 @@ const FeaturedProjects4 = () => {
       <div key={index} className="projectMain-container">
         <div className={`relative  project ${projectClass}`}>
           <div className="project-content">
-            <div className={`project-label ${titleClass}`}>Game of Thrones</div>
-            <h4 className={`project-title ${titleClass}`}>{project.title}</h4>
+            <div className={`mobile:text-[1rem] project-label ${titleClass}`}>Game of Thrones</div>
+            <h4 className={`text-3xl mobile:text-[1.5rem] project-title ${titleClass}`}>{project.title}</h4>
             <div className="group relative project-details">
               <p
                 style={{
@@ -136,7 +136,7 @@ const FeaturedProjects4 = () => {
                   color: "rgb(141, 147, 160)",
                   border: "1px solid #c1c1c194",
                 }}
-                className={`text-xl mobile:text-lg mobileBig:text-lg tinyTablet:text-lg tablet:text-lg bigTablet:text-lg ${parrafClass}`}
+                className={`text-xl  mobile:text-[1rem] mobileBig:text-lg tinyTablet:text-lg tablet:text-lg bigTablet:text-lg ${parrafClass}`}
               >
                 {project.description}
               </p>
@@ -177,7 +177,7 @@ const FeaturedProjects4 = () => {
     <>
       <div className="p-featured" style={{}}>
         <h1
-          className="text-xl"
+          className="text-xl mobile:text-[1.05rem]"
           style={{
             width: "100%",
             color: "#fff",
@@ -195,11 +195,11 @@ const FeaturedProjects4 = () => {
         </div>
 
         <div className="flex flex-col mt-12 justify-center items-center ">
-          <h2 className="text-2xl mb-4">View all projects</h2>
+          <h2 className="text-2xl mobile:text-[1.2rem] mb-4">View all projects</h2>
 
           <svg
-            width="50"
-            height="50"
+            width="30"
+            height="30"
             viewBox="0 0 92 50"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -15,10 +15,10 @@ const Tabs3 = () => {
 
   return (
     <div className="wrap">
-      <ul className="tabs group w-full">
-        <li><button href="#one" className={`text-lg activeTab === 'one' ? 'active' : ''`} onClick={() => handleTabClick('one')}>Stack</button></li>
-        <li><button href="#two" className={`text-lg activeTab === 'two' ? 'active' : ''`} onClick={() => handleTabClick('two')}>Certifications</button></li>
-        <li><button href="#three" className={`text-lg activeTab === 'three' ? 'active' : ''`} onClick={() => handleTabClick('three')}>Faqs</button></li>
+      <ul className="tabs group w-full ">
+        <li><button href="#one" className={`text-lg mobile:text-[1.05rem] activeTab === 'one' ? 'active' : ''`} onClick={() => handleTabClick('one')}>Stack</button></li>
+        <li><button href="#two" className={`text-lg mobile:text-[1.05rem] activeTab === 'two' ? 'active' : ''`} onClick={() => handleTabClick('two')}>Certifications</button></li>
+        <li><button href="#three" className={`text-lg mobile:text-[1.05rem] activeTab === 'three' ? 'active' : ''`} onClick={() => handleTabClick('three')}>Faqs</button></li>
       </ul>
       <div id="contentTab">
         <div id="one" className={`tab-content ${activeTab === 'one' ? 'active' : ''}`}><Stack2 /></div>

@@ -54,11 +54,11 @@ const Stat = ({ num, suffix, decimals = 0, subheading }) => {
 
   return (
     <div className="flex  flex-col items-cente=  ">
-      <p className="mb-2 text-center text-4xl font-semibold s">
+      <p className="mb-2 text-center text-4xl mobile:text-[2rem] font-semibold s">
         <span ref={ref}></span>
         {suffix}
       </p>
-      <p className="max-w-48 text-center text-neutral-400">{subheading}</p>
+      <p className="max-w-48 text-center text-neutral-400 mobile:text-[0.9rem]">{subheading}</p>
     </div>
   );
 };

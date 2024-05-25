@@ -65,20 +65,20 @@ const About4 = () => {
                 >
                   <div className="group upper12">
                     <div className="flex flex-col">
-                      <h3 className="text-lg">April 5, 2024</h3>
-                      <h2 className="text-xl font-bold py-2">
+                      <h3 className="text-lg mobile:text-[0.9rem]">April 5, 2024</h3>
+                      <h2 className="text-xl mobile:text-[1.05rem] font-bold py-2">
                         Crafting a design system for a multiplanetary
                       </h2>
-                      <ul className="text-lg flex gap-4 pb-2 ">
+                      <ul className="text-lg mobile:text-[0.9rem] flex gap-4 pb-2 ">
                         <li>#Arquitecture</li>
                         <li>#Engineering</li>
                       </ul>
-                      <p className="text-lg pb-2">
+                      <p className="text-lg mobile:text-[0.9rem] pb-2">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Iure eligendi fugiat vitae expedita deserunt
                         aliquam recusandae.
                       </p>
-                      <a className="text-lg text-[#84cdeb]">Read article -</a>
+                      <a className="text-lg mobile:text-[0.9rem] text-[#84cdeb]">Read article -</a>
                     </div>
 
                     <button
@@ -96,20 +96,20 @@ const About4 = () => {
                 >
                   <div className="group upper22">
                     <div className="flex flex-col">
-                      <h3 className="text-lg">April 5, 2024</h3>
-                      <h2 className="text-xl font-bold py-2">
+                      <h3 className="text-lg mobile:text-[0.9rem]">April 5, 2024</h3>
+                      <h2 className="text-xl mobile:text-[1.05rem] font-bold py-2">
                         Crafting a design system for a multiplanetary
                       </h2>
-                      <ul className="text-lg flex gap-4 pb-2 ">
+                      <ul className="text-lg mobile:text-[0.9rem] flex gap-4 pb-2 ">
                         <li>#Arquitecture</li>
                         <li>#Engineering</li>
                       </ul>
-                      <p className="text-lg pb-2">
+                      <p className="text-lg mobile:text-[0.9rem] pb-2">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Iure eligendi fugiat vitae expedita deserunt
                         aliquam recusandae.
                       </p>
-                      <a className="text-lg text-[#84cdeb]">Read article -</a>
+                      <a className="text-lg mobile:text-[0.9rem] text-[#84cdeb]">Read article -</a>
                     </div>
                     <button
                       style={{ bottom: "-10px", height: "12px" }}

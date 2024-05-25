@@ -10,7 +10,7 @@ const Modal = ({ title, timeline, icon }) => {
     <div className="">
       <button onClick={() => setIsOpen(true)} 
       // className="text-[#84cdeb]"
-      className="text-[rgb(141, 147, 160)]"
+      className="text-[rgb(141, 147, 160)] mobile:text-sm"
       >
         Read More
       </button>

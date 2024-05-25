@@ -13,7 +13,7 @@ const Jobs = () => {
 
 <div className="w-full p-4  rounded-lg shadow sm:p-8">
     <div className="flex items-center justify-between mb-4">
-        <h5 className="text-xl font-bold leading-none ">Latest Customers</h5>
+        <h5 className="text-xl mobile:text-[1.05rem] font-bold leading-none ">Latest Customers</h5>
         {/* <a href="#" className="text-lg font-medium text-blue-600 hover:underline dark:text-blue-500">
             View all
         </a> */}
@@ -27,14 +27,14 @@ const Jobs = () => {
                         <img className="w-8 h-8 rounded-full" src="/images/rulesCube.jpg" alt="Neil image" />
                     </div>
                     <div className="flex-1 min-w-0 ms-4">
-                        <p className="text-xl font-medium truncate">
+                        <p className="text-xl mobile:text-[1.05rem] font-medium truncate">
                             Rules Cube
                         </p>
-                        <p className="text-lg truncate">
+                        <p className="text-lg mobile:text-[0.9rem] truncate">
                             Consultant
                         </p>
                     </div>
-                    <div className="inline-flex text-xl items-center font-semibold ">
+                    <div className="inline-flex text-xl mobile:text-[1.05rem] items-center font-semibold ">
                       <span>2021-</span>  
                       <span>Present</span>  
 
@@ -47,14 +47,14 @@ const Jobs = () => {
                         <img style={{objectFit: 'contain'}} className="w-8 h-8 rounded-full" src="/images/global.png" alt="Bonnie image" />
                     </div>
                     <div className="flex-1 min-w-0 ms-4">
-                        <p className="text-xl font-medium truncate ">
+                        <p className="text-xl mobile:text-[1.05rem] font-medium truncate ">
                             Global H.C.
                         </p>
-                        <p className="text-lg  truncate ">
+                        <p className="text-lg mobile:text-[0.9rem]  truncate ">
                             Frontend Developer
                         </p>
                     </div>
-                    <div className="inline-flex text-xl items-center font-semibold ">
+                    <div className="inline-flex text-xl mobile:text-[1.05rem] items-center font-semibold ">
                       <span>2020-</span>  
                       <span>2021</span>  
 
@@ -67,14 +67,14 @@ const Jobs = () => {
                         <img className="w-8 h-8 rounded-full" src="/images/neoris.jpg" alt="Michael image" />
                     </div>
                     <div className="flex-1 min-w-0 ms-4">
-                        <p className="text-xl font-medium  truncate ">
+                        <p className="text-xl mobile:text-[1.05rem] font-medium  truncate ">
                             Neoris
                         </p>
-                        <p className="text-lg  truncate ">
+                        <p className="text-lg mobile:text-[0.9rem]  truncate ">
                             Full Stack Developer
                         </p>
                     </div>
-                    <div className="inline-flex text-xl items-center font-semibold ">
+                    <div className="inline-flex text-xl mobile:text-[1.05rem] items-center font-semibold ">
                       <span>2019-</span>  
                       <span>2020</span>  
 
@@ -87,14 +87,14 @@ const Jobs = () => {
                         <img className="w-8 h-8 rounded-full" src="/images/hsbc.jpg" alt="Lana image" />
                     </div>
                     <div className="flex-1 min-w-0 ms-4">
-                        <p className="text-xl font-medium truncate">
+                        <p className="text-xl mobile:text-[1.05rem] font-medium truncate">
                             HSBC
                         </p>
-                        <p className="text-lg truncate ">
+                        <p className="text-lg mobile:text-[0.9rem] truncate ">
                             IT Consultant
                         </p>
                     </div>
-                    <div className="inline-flex text-xl items-center font-semibold ">
+                    <div className="inline-flex text-xl mobile:text-[1.05rem] items-center font-semibold ">
                       <span>2018-</span>  
                       <span>2019</span>  
 
@@ -105,14 +105,14 @@ const Jobs = () => {
              */}
         </ul>
         <div style={{marginTop: '5%', padding: '2%'}} className='w-full flex justify-between gap-5'>
-        <a className='text-lg gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
+        <a className='text-lg mobile:text-[1.05rem] gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
         <PiFilePdfBold />
 
           <span className='mobile:hidden mobileBig:hidden tablet:hidden bigTablet:hidden'>Get Resume</span>  
           <span className='hidden mobile:block mobileBig:block tablet:block bigTablet:block '>Resume</span>  
 
         </a>
-        <a className='text-lg gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
+        <a className='text-lg mobile:text-[1.05rem] gap-2' style={{ width: '100%', border: '1px solid #c1c1c159', padding: '2%', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer'}}>
         <FaRegEnvelope />
 
         <span className='mobile:hidden mobileBig:hidden tablet:hidden bigTablet:hidden'>Send Email</span>  
