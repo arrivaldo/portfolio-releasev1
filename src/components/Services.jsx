@@ -52,8 +52,8 @@ const Services = () => {
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
-                  <h3 className="text-xl">Full Stack</h3>
-                  <svg
+                  <h3 className="text-xl">Full Stack Dev.</h3>
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
@@ -67,10 +67,11 @@ const Services = () => {
                   >
                     <polyline points="4 17 10 11 4 5"></polyline>
                     <line x1="12" y1="19" x2="20" y2="19"></line>
-                  </svg>
+                  </svg> */}
                 </div>
 
                 {/* <h4 className="text-lg cursor-pointer text-[#84cdeb] ">Read More</h4>  */}
+                <div id="readPart" className="flex items-center justify-between">
                 <Modal
                   title="Full Stack Developer"
                   timeline={[
@@ -129,6 +130,24 @@ const Services = () => {
                     </svg>
                   }
                 />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ffffff"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-terminal"
+                  >
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                  </svg>
+
+                </div>
+                
               </div>
             </div>
           </div>
@@ -143,24 +162,12 @@ const Services = () => {
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
                   <h3 className="text-xl">QA Analyst</h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#ffffff"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="feather feather-code"
-                  >
-                    <polyline points="16 18 22 12 16 6"></polyline>
-                    <polyline points="8 6 2 12 8 18"></polyline>
-                  </svg>
+                
                 </div>
 
                 {/* <h4 className="text-lg cursor-pointer text-[#84cdeb] ">Read More</h4>  */}
+                <div id="readPart" className="flex items-center justify-between">
+
                 <Modal
                   title="QA Analyst"
                   timeline={[
@@ -212,7 +219,25 @@ const Services = () => {
                     </svg>
                   }
                 />
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ffffff"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-code"
+                  >
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
               </div>
+
+                </div>
+          
             </div>
           </div>
 
@@ -226,24 +251,15 @@ const Services = () => {
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
                   <h3 className="text-xl">B. Architect</h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#ffffff"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="feather feather-settings"
-                  >
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-                  </svg>
+                  
                 </div>
 
                 {/* <h4 className="text-lg cursor-pointer text-[#84cdeb] ">Read More</h4>  */}
+
+                <div id="readPart" className="flex items-center justify-between">
+
+                  
+
                 <Modal
                   title="Business Architect"
                   timeline={[
@@ -291,6 +307,26 @@ const Services = () => {
                     </svg>
                   }
                 />
+
+<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ffffff"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-settings"
+                  >
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+
+
+              </div>
+
               </div>
             </div>
           </div>
@@ -305,21 +341,11 @@ const Services = () => {
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
                   <h3 className="text-xl">M. Engineer</h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#ffffff"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="feather feather-cloud"
-                  >
-                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-                  </svg>
+                 
                 </div>
+
+                <div id="readPart" className="flex items-center justify-between">
+
                 <Modal
                   title="Mechatronic Engineer"
                   timeline={[
@@ -366,6 +392,22 @@ const Services = () => {
                     </svg>
                   }
                 />
+                 <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ffffff"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-cloud"
+                  >
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  </svg>
+                </div>
+
               </div>
             </div>
           </div>

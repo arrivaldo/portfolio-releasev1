@@ -43,20 +43,20 @@ const SpringModal = ({ isOpen, setIsOpen, title, timeline, icon }) => {
               <div className="grid place-items-center mx-auto mb-2 w-full h-16">
                 {icon}
               </div>
-              <h3 className="text-3xl font-bold text-center mb-2">
+              <h3 className="text-2xl font-bold text-center mb-2">
                 {title}
               </h3>
-              <ol style={{ padding: '5%', height: '700px', overflowY: 'scroll' }} className="relative border-s border-gray-200 dark:border-gray-700">
+              <ol style={{ padding: '5%', height: '415px', overflowY: 'scroll' }} className="relative border-s border-gray-200 dark:border-gray-700">
                 {timeline.map((item, index) => (
                   <li key={index} className="mb-10 ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <time className="mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-500">
                       {item.date}
                     </time>
-                    <h3 className="text-2xl font-semibold dark:text-white">
+                    <h3 className="text-xl font-semibold dark:text-white">
                       {item.title}
                     </h3>
-                    <p className="mb-4 text-2xl font-normal text-gray-300">
+                    <p className="mb-4 text-xl font-normal text-gray-300">
                       {item.description}
                     </p>
                   </li>

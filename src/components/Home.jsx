@@ -35,7 +35,7 @@ const Home = () => {
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-4xl headWidth  leading-relaxed mobile:text-[1.6rem] mobileBig:text-[1.8rem] tablet:text-[2rem] tinyTablet:text-[1.8rem] bigTablet:text-[2rem] "
+            className="text-[2.1rem] headWidth  leading-relaxed mobile:text-[1.6rem] mobileBig:text-[1.8rem] tablet:text-[2rem] tinyTablet:text-[1.8rem] bigTablet:text-[2rem] "
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
@@ -69,7 +69,7 @@ const Home = () => {
                 filter: "brightness(0.8) contrast(2)",
               }}
             >
-              quality engineering.&nbsp;
+              QA engineering.&nbsp;
             </span>
           </p>
           
@@ -86,7 +86,7 @@ const Home = () => {
               style={{
                 background: "rgb(11 13 57)",
                 border: "1px solid #c1c1c194",
-                borderRadius: "5px",
+                // borderRadius: "5px",
               }}
               type="button"
               className="text-md flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] mobileBig:px-[0.6rem] "
@@ -105,7 +105,7 @@ const Home = () => {
               style={{
                 background: "rgb(11 13 57)",
                 border: "1px solid #c1c1c194",
-                borderRadius: "5px",
+                // borderRadius: "5px",
               }}
               type="button"
               className="text-md flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
@@ -125,7 +125,7 @@ const Home = () => {
               style={{
                 background: "rgb(11 13 57)",
                 border: "1px solid #c1c1c194",
-                borderRadius: "5px",
+                // borderRadius: "5px",
               }}
               type="button"
               className="text-md flex items-center gap-2 p-1  px-4 mobile:px-[0.6rem]"

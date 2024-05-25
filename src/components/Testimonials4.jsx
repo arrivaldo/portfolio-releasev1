@@ -13,7 +13,7 @@ const Testimonials4 = () => {
       img: "https://images.unsplash.com/photo-1627161683077-e34782c24d81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=703&q=80",
       name: "Sam Gharnagh",
       title: "Vice President",
-      info: "Erick helped in QA activities for an upgrade project of the Pega platform with smooth successful result. He took initiative to quickly learn the client application, create test cases and execute them",
+      info: "Erick performed QA activities for an upgrade project of the Pega platform with smooth successful result. He took initiative to quickly understand the client application, create test cases and execute them.",
     },
     {
       id: 2,
@@ -121,7 +121,7 @@ const Testimonials4 = () => {
               filter: "brightness(1.3)",
               color: "#8d93a0",
             }}
-            className="text-xl"
+            className="shift text-xl"
           >
             {testimonials[currentIndex].info}
           </p>
@@ -132,6 +132,8 @@ const Testimonials4 = () => {
             , {testimonials[currentIndex].title}
           </p>
         </div>
+
+
       </div>
       <div className="flex gap-2 flex-col justify-center w-full">
         <Dots
