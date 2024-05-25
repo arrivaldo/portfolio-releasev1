@@ -42,6 +42,9 @@
 .tinyMobile {
   font-size: 5rem
 }
+.headWidth {
+  width: 82%;
+}
 
 }
 
@@ -63,6 +66,10 @@
    .home-video {
     width: 80%;
   }
+  .subHead{
+    width: 105%;
+  }
+  
 
 }
 
@@ -112,7 +119,10 @@
   width: 80%;
 }
 .headWidth {
-  width: 83%;
+  width: 84%;
+}
+.subHead{
+  width: 95%;
 }
 
 }
