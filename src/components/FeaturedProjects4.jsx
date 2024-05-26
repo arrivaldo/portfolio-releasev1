@@ -131,7 +131,8 @@ const FeaturedProjects4 = () => {
             <div className="group relative project-details">
               <p
                 style={{
-                  background: "rgb(8, 8, 47)",
+                  // background: "rgb(8 8 47)"
+                  background: 'rgb(0 0 69)' ,                
                   filter: "brightness(1.3)",
                   color: "rgb(141, 147, 160)",
                   border: "1px solid #c1c1c194",

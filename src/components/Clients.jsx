@@ -79,7 +79,7 @@ const Clients = () => {
           <ul ref={spotlightRef} className="tag-list scroller__inner overflow-x-hidden mobileBig:text-lg">
             <div className="overflow-x-hidden" style={{ padding: "2px",borderRadius: '5px'}}>
               <div
-                style={{ background: "rgb(8 8 47)",borderRadius: '5px' }}
+                style={{ background: 'rgb(0 0 69)',borderRadius: '5px' }}
                 className="relative h-full overflow-x-hidden "
               >
                 <li className="overflow-x-hidden" style={{borderRadius: '5px'}}>
@@ -96,7 +96,7 @@ const Clients = () => {
 
             <div style={{ padding: "2px",borderRadius: '5px'}}>
               <div
-                style={{ background: "rgb(8 8 47)",borderRadius: '5px' }}
+                style={{ background: 'rgb(0 0 69)',borderRadius: '5px' }}
                 className="relative h-full  rounded-[inherit]  overflow-hidden"
               >
                 <li style={{borderRadius: '5px'}}>
@@ -111,7 +111,7 @@ const Clients = () => {
 
             <div style={{ padding: "2px",borderRadius: '5px' }}>
               <div
-                style={{ background: "rgb(8 8 47)",borderRadius: '5px' }}
+                style={{ background: 'rgb(0 0 69)',borderRadius: '5px' }}
                 className="relative h-ful rounded-[inherit]  overflow-hidden"
               >
                 <li style={{borderRadius: '5px'}}>
@@ -125,7 +125,7 @@ const Clients = () => {
 
             <div style={{ padding: "2px",borderRadius: '5px' }}>
               <div
-                style={{ background: "rgb(8 8 47)",borderRadius: '5px' }}
+                style={{ background: 'rgb(0 0 69)',borderRadius: '5px' }}
                 className="relative h-full rounded-[inherit]  overflow-hidden"
               >
                 <li style={{borderRadius: '5px'}}>
@@ -139,7 +139,7 @@ const Clients = () => {
 
             <div style={{ padding: "2px",borderRadius: '5px' }}>
               <div
-                style={{ background: "rgb(8 8 47)",borderRadius: '5px' }}
+                style={{ background: 'rgb(0 0 69)',borderRadius: '5px' }}
                 className="relative h-full rounded-[inherit]  overflow-hidden"
               >
                 <li style={{borderRadius: '5px'}}>

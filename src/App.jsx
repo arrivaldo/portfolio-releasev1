@@ -33,6 +33,7 @@ import Testimonials3 from "./components/Testimonials3";
 import Testimonials4 from "./components/Testimonials4";
 import Tabs from "./components/Tabs";
 import GridExample from "./components/GridExample";
+import Stack3 from "./components/Stack3";
 
 function App() {
   return (
@@ -66,6 +67,8 @@ function App() {
           {/* <FeaturedProjects3 /> */}
 
           <FeaturedProjects4 />
+
+          <Stack3 />
           {/* <GridExample /> */}
 
           {/* <CodeBeams /> */}

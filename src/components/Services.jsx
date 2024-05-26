@@ -47,13 +47,13 @@ const Services = () => {
             style={{ padding: "2px" }}
           >
             <div
-              style={{ background: "rgb(8 8 47)" }}
+              style={{ background: 'rgb(0 0 69)' }}
               className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
             >
               <div className="service-box4 flex flex-col justify-between h-24">
                 <div className="flex items-center  justify-between">
                 <h3 className="text-xl mobile:hidden tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem]">Full Stack Dev</h3>
-                  <h3 className="hidden mobile:block text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem]">Full Stack Developer</h3>                  {/* <svg
+                  <h3 className="hidden mobile:block text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem]">Full Stack Developer</h3>                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
                     height="30"
@@ -156,7 +156,7 @@ const Services = () => {
             style={{ padding: "2px" }}
           >
             <div
-              style={{ background: "rgb(8 8 47)" }}
+              style={{ background: 'rgb(0 0 69)' }}
               className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
             >
               <div className="service-box4 flex flex-col justify-between h-24">
@@ -246,7 +246,7 @@ const Services = () => {
             style={{ padding: "2px" }}
           >
             <div
-              style={{ background: "rgb(8 8 47)" }}
+              style={{ background: 'rgb(0 0 69)' }}
               className=" relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
             >
               <div className="service-box4 flex flex-col justify-between h-24">
@@ -336,7 +336,7 @@ const Services = () => {
             style={{ padding: "2px" }}
           >
             <div
-              style={{ background: "rgb(8 8 47)" }}
+              style={{ background: 'rgb(0 0 69)' }}
               className="relative h-full bg-gray-900 rounded-[inherit]  overflow-hidden"
             >
               <div className="service-box4 flex flex-col justify-between h-24">

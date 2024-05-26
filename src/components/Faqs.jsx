@@ -7,7 +7,7 @@ const BasicFAQ = () => {
   return (
     <div className="py-4 ">
       <div className="mx-auto max-w-3xl">
-        <h3 className="mb-4 text-left text-xl font-semibold">
+        <h3 className="mb-4 text-left text-xl tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem] font-semibold">
           Frequently asked questions
         </h3>
         <Question title="Why is the sky blue?" defaultOpen>
@@ -66,7 +66,7 @@ const Question = ({ title, children, defaultOpen = false }) => {
             //  },
           }}
           style={{color: 'rgb(132 205 235'}}
-          className="text-left text-lg font-medium"
+          className="text-left text-lg font-medium tinyMobile:text-[1.05rem] mobile:text-[1.05rem] mobileBig:text-[1.05rem]"
         >
           {title}
         </motion.span>
@@ -91,7 +91,7 @@ const Question = ({ title, children, defaultOpen = false }) => {
           height: open ? height : "0px",
           marginBottom: open ? "24px" : "0px",
         }}
-        className="overflow-hidden text-slate-200"
+        className="overflow-hidden text-slate-200 tinyMobile:text-[0.9rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem]"
       >
         <p ref={ref}>{children}</p>
       </motion.div>

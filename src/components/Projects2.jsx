@@ -30,7 +30,7 @@ const Projects2 = () => {
             style={{ padding: "2px",  border: '1px solid #c1c1c194' }}
           >
             <div
-              style={{    background: 'rgb(8, 8, 47)'  }}
+              style={{    background: 'rgb(0 0 69)' ,                  }}
               className="relative h-full   rounded-[inherit]  overflow-visible"
             >
             <Link
@@ -50,7 +50,7 @@ const Projects2 = () => {
             style={{ padding: "2px",  border: '1px solid #c1c1c194' }}
           >
             <div
-              style={{    background: 'rgb(8, 8, 47)'  }}
+              style={{    background: 'rgb(0 0 69)' ,                  }}
               className="relative h-full   rounded-[inherit]  overflow-visible"
             >
             <Link
@@ -71,7 +71,7 @@ const Projects2 = () => {
             style={{ padding: "2px",  border: '1px solid #c1c1c194' }}
           >
             <div
-              style={{    background: 'rgb(8, 8, 47)'  }}
+              style={{    background: 'rgb(0 0 69)' ,                  }}
               className="relative h-full   rounded-[inherit]  overflow-visible"
             >
 
@@ -93,7 +93,7 @@ const Projects2 = () => {
             style={{ padding: "2px",  border: '1px solid #c1c1c194' }}
           >
             <div
-              style={{    background: 'rgb(8, 8, 47)'  }}
+              style={{    background: 'rgb(0 0 69)' ,                  }}
               className="relative h-full   rounded-[inherit]  overflow-visible"
             >
 
@@ -115,7 +115,7 @@ const Projects2 = () => {
             style={{ padding: "2px", border: '1px solid #c1c1c194' }}
           >
             <div
-              style={{    background: 'rgb(8, 8, 47)'  }}
+              style={{    background: 'rgb(0 0 69)' ,                  }}
               className="relative h-full   rounded-[inherit]  overflow-visible"
             >
             <Link
@@ -135,7 +135,7 @@ const Projects2 = () => {
             style={{ padding: "2px",    border: '1px solid #c1c1c194' }}
           >
             <div
-              style={{    background: 'rgb(8, 8, 47)'  }}
+              style={{    background: 'rgb(0 0 69)' ,                  }}
               className="relative h-full   rounded-[inherit]  overflow-visible"
             >
             <Link
