@@ -9,15 +9,19 @@
 }
 
 .mainText {
-  width: 60%;
+  width: 60.5%;
 }
 
 .home-video {
-  width: 39%;
+  width: 35%;
 }
 
 .headWidth {
-  width: 92%;
+  width: 100%;
+}
+
+.m-button {
+  margin-top: 5%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 355px) {
@@ -68,6 +72,9 @@
   }
   .subHead{
     width: 105%;
+  }
+  .headWidth {
+    width: 90%;
   }
   
 
@@ -207,6 +214,7 @@
 
    .padding-home {
     padding: 0 16%;
+    margin-top: 5%;
    } 
 
    
@@ -221,6 +229,15 @@
 .subHead{
   width: 70%;
 }
+
+.home-video {
+  width: 58%;
+}
+
+.m-button {
+  margin-top: 4%;
+}
+
 }
 
 @media screen and (min-width: 716px) and (max-width: 819px) { 

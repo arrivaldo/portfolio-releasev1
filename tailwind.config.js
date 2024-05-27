@@ -23,6 +23,10 @@ export default {
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
 
     },
+
+    // fontSize: {
+    //   'xl': '1.22rem', 
+    // },
   },
   plugins: [],
 }

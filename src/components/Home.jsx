@@ -7,6 +7,15 @@ import { IoIosContact } from "react-icons/io";
 import Spotlight from "../Spotlight";
 import Modal2 from "./Modal2";
 
+const GlowingChip = () => {
+  return (
+    <span className="relative z-10 mb-4 inline-block rounded-full border border-zinc-700 bg-zinc-900/20 px-3 py-1.5 text-xs text-zinc-50 md:mb-0">
+      Available for work
+      <span className="absolute bottom-0 left-3 right-3 h-[1px] bg-gradient-to-r from-zinc-500/0 via-zinc-300 to-zinc-500/0" />
+    </span>
+  );
+};
+
 const Home = () => {
   const spotlightRef = useRef(null);
 
@@ -31,11 +40,11 @@ const Home = () => {
           }}
           className= " mainText flex flex-col justify-center "
         >
-          <h3 className="text-xl tinyMobile:text-[0.9rem] mobile:text-[1rem] mobileBig:text-[1rem]   mobileBig:text-lg tablet:text-lg " style={{ color: "#b7bfd0" }}>
+          <h3 className="text-lg tinyMobile:text-[0.9rem] mobile:text-[1rem] mobileBig:text-[1rem]   mobileBig:text-lg tablet:text-lg " style={{ color: "#b7bfd0" }}>
             Hi there, this is Erick
           </h3>
           <h2
-            className="text-[2.1rem] headWidth  leading-relaxed tinyMobile:text-[1.2rem] mobile:text-[1.5rem] mobileBig:text-[1.5em] tablet:text-[2rem] tinyTablet:text-[1.8rem] bigTablet:text-[2rem] "
+            className="text-[2.4rem] headWidth  leading-relaxed tinyMobile:text-[1.2rem] mobile:text-[1.5rem] mobileBig:text-[1.5em] tablet:text-[2rem] tinyTablet:text-[1.8rem] bigTablet:text-[2rem] "
             style={{ fontWeight: "600", marginTop: "2%" }}
           >
             I'm a <span style={{}}>Full-Stack Developer </span> and a&nbsp;
@@ -45,7 +54,38 @@ const Home = () => {
           </h2>
 
           <p
-            className="text-xl subHead leading-relaxed tinyMobile:text-[0.85rem] mobile:text-[1rem]   mobileBig:text-[1rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
+            className="text-xl tinyMobile:hidden mobile:hidden mobileBig:hidden tinyTablet:hidden subHead leading-relaxed tinyMobile:text-[0.85rem] mobile:text-[1rem]   mobileBig:text-[1rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
+            style={{
+              opacity: "0.8",
+              filter: "brightness(1.3)",
+              color: "#8d93a0",
+              marginTop: "2%",
+            }}
+          >
+            Engineer based in México with experience crafting in&nbsp;
+            <span
+              style={{
+                color: "#ccedff",
+                filter: "brightness(0.8) contrast(2)",
+              }}
+            >
+              project development&nbsp;
+            </span>
+            and&nbsp;
+            <span
+              style={{
+                color: "#ccedff",
+                filter: "brightness(0.8) contrast(2)",
+              }}
+            >
+              QA engineering.&nbsp;
+            </span>
+          </p>
+
+
+
+          <p
+            className="hidden tinyMobile:block mobile:block mobileBig:block tinyTablet:block text-xl subHead leading-relaxed tinyMobile:text-[0.85rem] mobile:text-[1rem]   mobileBig:text-[1rem] tablet:text-lg mobile:leading-7 mobileBig:leading-7"
             style={{
               opacity: "0.8",
               filter: "brightness(1.3)",
@@ -74,8 +114,9 @@ const Home = () => {
           </p>
           
       <div
+      className="m-button"
         ref={spotlightRef}
-        style={{ display: "flex", gap: "2%", marginTop: '5%' }}
+        style={{ display: "flex", gap: "2%" }}
       >
         <div
           style={{ padding: "2px" }}
@@ -91,7 +132,7 @@ const Home = () => {
                 // borderRadius: "5px",
               }}
               type="button"
-              className=" text-[1.05rem] tinyMobile:text-[0.8rem] tinyMobile:px-1 mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] mobileBig:px-[0.6rem] "
+              className=" text-[1rem] tinyMobile:text-[0.8rem] tinyMobile:px-1 mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] mobileBig:px-[0.6rem] "
             >
               <FaLinkedinIn />
               LinkedIn
@@ -111,7 +152,7 @@ const Home = () => {
                 // borderRadius: "5px",
               }}
               type="button"
-              className="text-[1.05rem] tinyMobile:text-[0.8rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
+              className="text-[1rem] tinyMobile:text-[0.8rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1 px-4 mobile:px-[0.6rem] "
             >
               <FiGithub />
               Github
@@ -132,7 +173,7 @@ const Home = () => {
                 // borderRadius: "5px",
               }}
               type="button"
-              className="text-[1.05rem] tinyMobile:text-[0.8rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1  px-4 mobile:px-[0.6rem]"
+              className="text-[1rem] tinyMobile:text-[0.8rem] mobile:text-[0.9rem] mobileBig:text-[0.9rem] flex items-center gap-2 p-1  px-4 mobile:px-[0.6rem]"
             >
               <IoIosContact />
               Contact

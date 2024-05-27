@@ -11,32 +11,32 @@ const BasicFAQ = () => {
           Frequently asked questions
         </h3>
         <Question title="Why is the sky blue?" defaultOpen>
-          <p>
+          <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </span>
         </Question>
         <Question title="Why did the chicken cross the road?">
-          <p>
+          <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </span>
         </Question>
         <Question title="How many licks does it take to get to the center of a tootsie pop?">
-          <p>
+          <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </span>
         </Question>
         <Question title="Where's Waldo?">
-          <p>
+          <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
-          </p>
+          </span>
         </Question>
       </div>
     </div>
@@ -78,11 +78,11 @@ const Question = ({ title, children, defaultOpen = false }) => {
             },
             closed: {
               rotate: "0deg",
-              color: "rgb(132 205 235",
+              color: "rgb(132 205 235)",
             },
           }}
         >
-          <FiChevronDown style={{color: 'rgb(132, 205, 235);'}} className="text-2xl" />
+          <FiChevronDown style={{color: 'rgb(132, 205, 235)'}} className="text-2xl" />
         </motion.span>
       </button>
       <motion.div

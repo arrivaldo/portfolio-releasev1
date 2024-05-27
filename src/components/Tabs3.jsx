@@ -24,10 +24,10 @@ const Tabs3 = () => {
       <div id="contentTab">
         <div id="one" className={`tab-content ${activeTab === 'one' ? 'active' : ''}`}>
           {/* <Stack2 /> */}
-          <Stack3 />
+          <Stack2 />
         </div>
         <div id="two" className={`tab-content ${activeTab === 'two' ? 'active' : ''}`}><Certifications2 /></div>
-        <div style={{maxHeight: '300px'}} id="three" className={`tab-content overflow-y-scroll ${activeTab === 'three' ? 'active' : ''}`}> <Faqs /> </div>
+        <div style={{maxHeight: '300px'}} id="three" className={`tab-content overflow-y-scroll overflow-x-hidden ${activeTab === 'three' ? 'active' : ''}`}> <Faqs /> </div>
       </div>
     </div>
   );

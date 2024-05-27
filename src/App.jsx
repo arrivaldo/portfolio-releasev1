@@ -34,6 +34,7 @@ import Testimonials4 from "./components/Testimonials4";
 import Tabs from "./components/Tabs";
 import GridExample from "./components/GridExample";
 import Stack3 from "./components/Stack3";
+import BGrid from './components/BGrid'
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
 
           <Home />
           {/* <Bento /> */}
+          {/* <BGrid /> */}
           <Clients />
 
           {/* <About4 /> */}
